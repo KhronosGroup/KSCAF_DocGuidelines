@@ -6,8 +6,8 @@ Safety Critical Advisory Panel’s guidelines for developing a safety critical t
 4 types of document that make up the SCAP principle, requirement and guidelines documentation and the files that represent them. The term document here means the finished document, the output result. Files, the .adoc type, contain text that is included in a document. The following patterns in file names means the following:
 
 * File suffix .adoc is an Asciidoc file type
-** Prefix common to .adoc files - files that belong to one document
-** No prefix - files common to many documents
+* - Prefix common to .adoc files - files that belong to one document
+* - No prefix - files common to many documents
 * Resultant output file e.g. .pdf
 
 Chapters or sections in a document is designated by numbers following the prefix document name. This is followed by a title or description. The title is followed if present by the Khrono SCAP Bugzilla issue number where the subject matter originated and is tracked.  
