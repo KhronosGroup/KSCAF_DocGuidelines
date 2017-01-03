@@ -7,12 +7,15 @@ Safety Critical Advisory Panel’s guidelines for developing a safety critical t
 
 * File suffix .adoc is an Asciidoc file type
 * - Prefix common to .adoc files - files that belong to one document
-* - No prefix - files common to many documents
+* - No prefix or 'cmn_' - files common to many documents
 * Resultant output file e.g. .pdf
 
 Chapters or sections in a document is designated by numbers following the prefix document name. This is followed by a title or description. The title is followed if present by the Khrono SCAP Bugzilla issue number where the subject matter originated and is tracked.  
 
+File name formating:
 DocumentName | Section/chapter | Section title/description | [Bugzilla #xxxx].adoc
+
+Files that are common are duplicated in other SCAP documents like SCAP-Requirements (in a file system they would be shared for many documents).
 
 #### To see the document
 Install Asciidoc Editor FX then double click on the file *Guidelines_0_MainTopLevelAllIncludes.adoc*. Should see the document rendered.
