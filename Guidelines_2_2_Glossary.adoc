@@ -20,6 +20,6 @@ List of terms or definitions used within this document.
 |Term | Description 
 |API  | Application program interface 
 |RTOS | Real time operating system
-|SC   | Safe Critical 
-|SCAP | Safe Critical API Panel
+|SC   | Safety Critical 
+|SCAP | Safety Critical API Panel
 |=============================
