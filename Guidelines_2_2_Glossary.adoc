@@ -17,9 +17,10 @@ List of terms or definitions used within this document.
 
 [cols="3,10", width="90%", options="header", frame="topbot"]
 |=============================
-|Term | Description 
-|API  | Application program interface 
-|RTOS | Real time operating system
-|SC   | Safety Critical 
-|SCAP | Safety Critical API Panel
+|Term  | Description 
+|API   | Application program interface 
+|POSIX | Portable operating system interface
+|RTOS  | Real time operating system
+|SC    | Safety critical 
+|SCAP  | Khronos Safety Critical API Panel
 |=============================

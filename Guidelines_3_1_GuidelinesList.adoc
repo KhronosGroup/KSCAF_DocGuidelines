@@ -27,5 +27,6 @@ The following is a list of all the SCAP guidelines when considering designing an
 |<<b15991,2>>  | Memory management
 |<<b15993,3>>  | Conformance testing
 |<<b16012,4>>  | The SC API
-|5  | [red yellow-background]#xxxxxx#
+|<<b16024,5>>  | Explicit timeout values
+|6  | [red yellow-background]#xxxxxx#
 |=============================

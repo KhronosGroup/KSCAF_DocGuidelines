@@ -23,4 +23,6 @@ include::Guidelines_3_2_2_15991_MemoryManagement.adoc[]
 
 include::Guidelines_3_2_3_15993_ConformanceTesting.adoc[]
 
-include::Guidelines_3_2_3_16012_SCAPISubSetOfGenPurAPI.adoc[]
+include::Guidelines_3_2_4_16012_SCAPISubSetOfGenPurAPI.adoc[]
+
+include::Guidelines_3_2_5_16024_ExplicitTimeOutValues.adoc[]
