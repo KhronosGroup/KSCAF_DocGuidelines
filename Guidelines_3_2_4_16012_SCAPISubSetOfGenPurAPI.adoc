@@ -9,7 +9,7 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.01
+:Revision: 0.02
 
 // Hyperlink anchor, the ID matches those in 
 // 3_1_GuidelinesList.adoc 
@@ -41,4 +41,4 @@ Long hardware prototype times, limited quantities, and specialized SC driver dev
 .Profile Venn diagram
 image::images/3_2_4_2_ProfileVennDiagram.png[width=50%, align=center, caption="Figure 3.2.4.2: "]
 
-This Venn diagram shown in <<ProfileVennDiagram>> shows that while the profile triangle is a general rule of thumb, that the different profiles may include additional APIs and functionality to meet the requirements of the specific profile. It also shows that the Safety Critical Core API Profile can include Desktop Extensions and is not limited to only the Desktop Core API.
+This Venn diagram shown in figure<<ProfileVennDiagram>> shows that while the profile triangle is a general rule of thumb, that the different profiles may include additional APIs and functionality to meet the requirements of the specific profile. It also shows that the Safety Critical Core API Profile can include Desktop Extensions and is not limited to only the Desktop Core API.
