@@ -1,0 +1,25 @@
+// (C) Copyright 2014-2017 The Khronos Group Inc. All Rights Reserved.
+// Khronos Group Safety Critical API Development SCAP
+// document
+// 
+// Text format: asciidoc 8.6.9
+// Editor:      Asciidoc Book Editor
+//
+// Description: Guidelines 3.2.3 Guidelines Bugzilla #15993
+
+:Author: Illya Rudkin (spec editor)
+:Author Initials: IOR
+:Revision: 0.01
+
+// Hyperlink anchor, the ID matches those in 
+// 3_1_GuidelinesList.adoc 
+[[b15993]]
+
+==== 3 Conformance Testing
+
+It is not the intent for Khronos conformance tests for Safety Critical technologies to used or supplied for certification testing. The intent for the Khronos conformance tests are to test the implementations conformance with the specification in order to ensure that all implementations share the same contract with the application and thereby avoid industry fragmentation through different behavior for the same function.
+
+Please read the
+<<Guideline_2_1_SCAPRiderStatement,guideline statement>>.
+
+Further reading: SCAP Requirements: Fully testable.

@@ -24,7 +24,8 @@ The following is a list of all the SCAP guidelines when considering designing an
 |=============================
 |Guideline | Description 
 |<<b15008,1>>  | List of SC RTOS and their unique features
-|<<b15991,2>>  | Memory Management
-|3  | [red yellow-background]#xxxxx#
-|4  | [red yellow-background]#xxxxxx#
+|<<b15991,2>>  | Memory management
+|<<b15993,3>>  | Conformance testing
+|4  | [red yellow-background]#xxxxx#
+|5  | [red yellow-background]#xxxxxx#
 |=============================

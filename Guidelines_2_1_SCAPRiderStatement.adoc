@@ -11,6 +11,8 @@
 :Author Initials: IOR
 :Revision: 0.01
 
+[[Guideline_2_1_SCAPRiderStatement]]
+
 === Khronos SCAP document usage
 
 include::cmn_KhronosSCAPRiderStatement.adoc[]
