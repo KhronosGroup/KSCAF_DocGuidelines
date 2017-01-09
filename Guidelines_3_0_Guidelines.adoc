@@ -22,3 +22,5 @@ include::Guidelines_3_2_1_15008_SafetyCriticalRTOS.adoc[]
 include::Guidelines_3_2_2_15991_MemoryManagement.adoc[]
 
 include::Guidelines_3_2_3_15993_ConformanceTesting.adoc[]
+
+include::Guidelines_3_2_3_16012_SCAPISubSetOfGenPurAPI.adoc[]
