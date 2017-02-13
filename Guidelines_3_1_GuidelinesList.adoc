@@ -28,5 +28,6 @@ The following is a list of all the SCAP guidelines when considering designing an
 |<<b15993,3>>  | Conformance testing
 |<<b16012,4>>  | The SC API
 |<<b16024,5>>  | Explicit timeout values
+|<<gh3,6>>     | MISRA compliance
 |6  | [red yellow-background]#xxxxxx#
 |=============================
