@@ -11,7 +11,7 @@
 :Author Initials: IOR
 :Revision: 0.02
 
-== 3.0 Guidelines
+== Guidelines
 
 Some text about guidelines in general. Refer to the rider statement.
 

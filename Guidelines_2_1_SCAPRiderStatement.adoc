@@ -13,6 +13,6 @@
 
 [[Guideline_2_1_SCAPRiderStatement]]
 
-=== 2.1 Khronos SCAP document usage
+=== Khronos SCAP document usage
 
 include::cmn_KhronosSCAPRiderStatement.adoc[]
