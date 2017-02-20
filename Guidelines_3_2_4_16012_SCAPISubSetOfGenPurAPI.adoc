@@ -15,7 +15,7 @@
 // 3_1_GuidelinesList.adoc 
 [[b16012]]
 
-==== 3.2.4 The SC API 
+==== 4 The SC API 
 
 The SC version of the API should be a subset of the API in question. Allowing applications written for the SC version of the API to compile, link and function using a library or driver which provides the more general API. By keeping the SC API as a subset we do not introduce more IP than that which exists in the already ratified version of the standard. From a Khronos perspective this simplifies IP rights and ratification of the SC standard.
 
