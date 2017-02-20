@@ -9,11 +9,17 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.01
+:Revision: 0.02
 
 === Appendix A - Additional information in detail
 
-===== Appendix A.1
+// Appendix sub-sections numbered using roman numbering
+===== Appendix A.I: Title text
+===== Appendix A.II: Title text
+===== Appendix A.III: Title text
+===== Appendix A.IV: Title text
+===== Appendix A.V: Title text
+
 
 Some information in more details perhaps some diagrams.
 

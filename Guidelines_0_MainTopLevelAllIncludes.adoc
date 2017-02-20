@@ -70,5 +70,7 @@ include::Guidelines_2_0_Overview.adoc[]
 <<<
 include::Guidelines_3_0_Guidelines.adoc[]
 
+:numbered!:
+
 <<<
 include::Guidelines_Appendices.adoc[]
