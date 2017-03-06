@@ -15,7 +15,7 @@
 // 3_1_GuidelinesList.adoc 
 [[b16024]]
 
-==== 5 Explicit Timeout Values
+==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Explicit Timeout Values
 
 Similar to being able to accurately control memory usage on an embedded system, in a SC system the execution time must be accurately controlled. A key requirement of system safety certification is to guarantee that a program has the required amount of execution time for its worst case execution behavior. This is referred to as the systems Worst Case Execution Time. To this extent many safety critical operating system provide time partitioning and guarantees about how long any single operating system call may take. If an application exceeds its time budget the application can be forced to shut down.
 

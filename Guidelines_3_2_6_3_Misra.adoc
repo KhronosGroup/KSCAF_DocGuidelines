@@ -1,0 +1,28 @@
+// (C) Copyright 2014-2017 The Khronos Group Inc. All Rights Reserved.
+// Khronos Group Safety Critical API Development SCAP
+// document
+// 
+// Text format: asciidoc 8.6.9
+// Editor:      Asciidoc Book Editor
+//
+// Description: Guidelines 3.2.6 Guidelines Github #3
+
+:Author: Illya Rudkin (spec editor)
+:Author Initials: IOR
+:Revision: 0.02
+
+// Hyperlink anchor, the ID matches those in 
+// 3_1_GuidelinesList.adoc 
+[[gh3]]
+
+==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. MISRA Compliance
+
+MISRA, Motor Industry Software Reliability Association, C and
+MISRA pass:[C++] are sets of software development guidelines for the C and pass:[C++] programming languages. Their aims are to facilitate code safety, security,portability and reliability in the context of embedded systems. MISRA has evolved as a widely accepted model for best practices by leading developers in sectors including automotive, aerospace, telecom, medical devices, defence,railway, and others.
+
+It is recommended where possible that a SC API follows the MISRA
+C or MISRA pass:[C++] guidelines. It is also recommended that any SC implementation should also follow the MISRA guidelines and pass its conformance analysis 100%.
+
+For more information on MISRA visit the following web links: +
+- https://en.wikipedia.org/wiki/MISRA_C +
+- https://www.misra.org.uk +

@@ -11,7 +11,13 @@
 :Author Initials: IOR
 :Revision: 0.02
 
-== Guidelines
+// Automatic section numbering, use {counter:section-id}  
+:section-id: 0
+
+// Automatic chapter sub numbering, use {counter:chapter-sub-id}  
+:chapter-sub-id: 0
+
+== {counter:chapter-id}. Guidelines
 
 Some text about guidelines in general. Refer to the rider statement.
 
@@ -26,3 +32,5 @@ include::Guidelines_3_2_3_15993_ConformanceTesting.adoc[]
 include::Guidelines_3_2_4_16012_SCAPISubSetOfGenPurAPI.adoc[]
 
 include::Guidelines_3_2_5_16024_ExplicitTimeOutValues.adoc[]
+
+include::Guidelines_3_2_6_3_Misra.adoc[]

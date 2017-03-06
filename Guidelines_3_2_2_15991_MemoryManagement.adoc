@@ -15,6 +15,6 @@
 // 3_1_GuidelinesList.adoc 
 [[b15991]]
 
-==== 2 Memory Management
+==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Memory Management
 
 Some text about memory management in a safety critical context

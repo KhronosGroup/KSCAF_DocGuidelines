@@ -16,7 +16,7 @@
 :Author Initials: IOR
 :Revision: 0.02
 
-=== Guidelines list
+=== {chapter-id}.{counter:chapter-sub-id}. Guidelines list
 
 The following is a list of all the SCAP guidelines when considering designing and implementing a SC API.
 
@@ -25,10 +25,10 @@ The following is a list of all the SCAP guidelines when considering designing an
 [caption="Table 3.1.1: ", cols="^4,10", width="90%", options="header", frame="topbot"]
 |=============================
 |Guideline | Description 
-|<<b15008,1>>  | List of SC RTOS and their unique features
-|<<b15991,2>>  | Memory management
-|<<b15993,3>>  | Conformance testing
-|<<b16012,4>>  | The SC API
-|<<b16024,5>>  | Explicit timeout values
-|6  | [red yellow-background]#xxxxxx#
+|<<b15008,{counter:section-id}>>  | List of SC RTOS and their unique features
+|<<b15991,{counter:section-id}>>  | Memory management
+|<<b15993,{counter:section-id}>>  | Conformance testing
+|<<b16012,{counter:section-id}>>  | The SC API
+|<<b16024,{counter:section-id}>>  | Explicit timeout values
+|<<gh3,{counter:section-id}>>     | MISRA Compliance
 |=============================
