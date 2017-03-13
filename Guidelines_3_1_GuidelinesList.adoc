@@ -30,5 +30,5 @@ The following is a list of all the SCAP guidelines when considering designing an
 |<<b15993,{counter:section-id}>>  | Conformance testing
 |<<b16012,{counter:section-id}>>  | The SC API
 |<<b16024,{counter:section-id}>>  | Explicit timeout values
-|<<gh3,{counter:section-id}>>     | MISRA Compliance
+|<<gh3,{counter:section-id}>>     | MISRA compliance
 |=============================
