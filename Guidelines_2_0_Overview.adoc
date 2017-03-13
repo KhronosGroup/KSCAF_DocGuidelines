@@ -25,3 +25,5 @@ property or have IP implications in the SCAP. Implementation details belong in o
 include::Guidelines_2_1_SCAPRiderStatement.adoc[]
 
 include::Guidelines_2_2_Glossary.adoc[]
+
+include::Guidelines_2_3_Terminology.adoc[]
