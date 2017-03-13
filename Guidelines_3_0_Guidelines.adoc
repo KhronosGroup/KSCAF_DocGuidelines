@@ -19,7 +19,11 @@
 
 == {counter:chapter-id}. Guidelines
 
-Some text about guidelines in general. Refer to the rider statement.
+The guidelines listed in table 3.1.1 are all the guidelines in this document. However this list is continuously revised with new guidelines being added on a regular basis. 
+
+IMPORTANT: It is therefore recommended that the guidelines be periodically reviewed for new or updated guidelines.
+
+TIP: If you wish to contribute to the guidelines please contact the SCAP working group chair person. 
 
 include::Guidelines_3_1_GuidelinesList.adoc[]
 
