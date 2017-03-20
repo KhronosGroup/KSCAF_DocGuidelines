@@ -20,8 +20,8 @@
 MISRA, Motor Industry Software Reliability Association, C and
 MISRA pass:[C++] are sets of software development guidelines for the C and pass:[C++] programming languages. Their aims are to facilitate code safety, security,portability and reliability in the context of embedded systems. MISRA has evolved as a widely accepted model for best practices by leading developers in sectors including automotive, aerospace, telecom, medical devices, defence,railway, and others.
 
-It is recommended where possible that a SC API follows the MISRA
-C or MISRA pass:[C++] guidelines. It is also recommended that any SC implementation should also follow the MISRA guidelines and pass its conformance analysis 100%.
+It is recommended that a Khrono SC API follows the MISRA
+C or MISRA pass:[C++] guidelines as it is can be assummed that the development of an SC API implementation would also follow MISRA guidelines. MISRA also provide a conformance test suite to ensure compliance.
 
 For more information on MISRA visit the following web links: +
 - https://en.wikipedia.org/wiki/MISRA_C +
