@@ -42,3 +42,5 @@ include::Guidelines_3_2_6_3_Misra.adoc[]
 include::Guidelines_3_2_7_16018_RealTime.adoc[]
 
 include::Guidelines_3_2_8_16159_Scheduling.adoc[]
+
+include::Guidelines_3_2_9_16011_DebugFunctionality.adoc[]
