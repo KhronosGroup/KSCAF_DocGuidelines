@@ -1,0 +1,27 @@
+// (C) Copyright 2014-2017 The Khronos Group Inc. All Rights Reserved.
+// Khronos Group Safety Critical API Development SCAP
+// document
+// 
+// Text format: asciidoc 8.6.9
+// Editor:      Asciidoc Book Editor
+//
+// Description: Guidelines 2.0 Overview
+
+:Author: Illya Rudkin (spec editor)
+:Author Initials: IOR
+:Revision: 0.02
+
+// Automatic chapter sub numbering, use {counter:chapter-sub-id}  
+:chapter-sub-id: 0
+
+== {counter:chapter-id}. Overview
+
+This document contains API design guidelines to be considering when creating or refactoring a Khronos API for use in a safety critical (SC) environment. The guidelines contained here are considered non-mandatory but advisory, unlike the those specified in the SCAP Requirements document.
+
+The guidelines have been given on the advice from experts in various SC fields or domains. Khronos SCAP adopts the guidelines based on development and implementation experience of those experts when satisfying a domain’s software or hardware development requirements, safety requirements and development standard. It is highly recommended that all the guidelines while not mandatory should be reviewed when creating or refactoring a Khronos API as they can act as provoking stimuli to the formation of other safety considerations in the design or refactor of the API which may otherwise be overlooked.
+
+include::Guidelines_2_1_SCAPRiderStatement.adoc[]
+
+include::Guidelines_2_2_Glossary.adoc[]
+
+include::Guidelines_2_3_Terminology.adoc[]
