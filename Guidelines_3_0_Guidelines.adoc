@@ -9,7 +9,7 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.02
+:Revision: 0.022
 
 // Automatic section numbering, use {counter:section-id}  
 :section-id: 0
@@ -44,3 +44,5 @@ include::Guidelines_3_2_7_16018_RealTime.adoc[]
 include::Guidelines_3_2_8_16159_Scheduling.adoc[]
 
 include::Guidelines_3_2_9_16011_DebugFunctionality.adoc[]
+
+include::Guidelines_3_2_10_6_UniqueID.adoc[]

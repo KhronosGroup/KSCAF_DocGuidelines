@@ -14,7 +14,7 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.02
+:Revision: 0.022
 
 === {chapter-id}.{counter:chapter-sub-id}. Guidelines list
 
@@ -34,4 +34,5 @@ The following is a list of all the SCAP guidelines when considering designing an
 |<<b16018,{counter:section-id}>>  | Real Time
 |<<b16159,{counter:section-id}>>  | Scheduling
 |<<b16011,{counter:section-id}>>  | Debug Functionality
+|<<gh6,{counter:section-id}>>     | Unique ID
 |=============================
