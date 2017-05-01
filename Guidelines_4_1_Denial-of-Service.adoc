@@ -1,0 +1,21 @@
+// (C) Copyright 2014-2017 The Khronos Group Inc. All Rights Reserved.
+// Khronos Group Safety Critical API Development SCAP
+// document
+// 
+// Text format: asciidoc 8.6.9
+// Editor:      Asciidoc Book Editor
+//
+// Description: 4.1 Discussion point: Denial-of-Service
+//
+
+:Author: Illya Rudkin (spec editor)
+:Author Initials: IOR
+:Revision: 0.021
+
+=== {chapter-id}.{counter:chapter-sub-id}. Denial-of-Service (DoS)
+For both a safety hazard mitigation and cyber-attack point of view DoS should be identified and the risk reduced. DoS could occur via two attack vectors:
+
+1.  Data handling overloading
+2.  Calculating for results
+
+The safety critical API should be accommodate parameters, size or time, or return status results accordingly. A Watchdog system may also be necessary to identify and mitigate DoS attacks.

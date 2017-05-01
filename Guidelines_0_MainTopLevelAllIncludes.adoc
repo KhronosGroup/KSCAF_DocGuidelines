@@ -39,7 +39,7 @@
 :doc_date: {docdate}
 :doctitle: Khronos SCAP Guidelines v{doc_version}
 :doc_revision: 1   
-:doc_version: 0.02 
+:doc_version: 0.021 
 :toc-placement: manual
 :toclevels: 2
 :toc:
@@ -71,6 +71,9 @@ include::Guidelines_2_0_Overview.adoc[]
 
 <<<
 include::Guidelines_3_0_Guidelines.adoc[]
+
+<<<
+include::Guidelines_4_0_Discussion.adoc[]
 
 :numbered!:
 
