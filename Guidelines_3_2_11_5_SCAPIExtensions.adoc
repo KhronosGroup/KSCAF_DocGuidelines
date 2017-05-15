@@ -1,0 +1,24 @@
+// (C) Copyright 2014-2017 The Khronos Group Inc. All Rights Reserved.
+// Khronos Group Safety Critical API Development SCAP
+// document
+// 
+// Text format: asciidoc 8.6.9
+// Editor:      Asciidoc Book Editor
+//
+// Description: Guidelines 3.2.6 Guidelines Github #5
+
+:Author: Illya Rudkin (spec editor)
+:Author Initials: IOR
+:Revision: 0.022
+
+// Hyperlink anchor, the ID matches those in 
+// 3_1_GuidelinesList.adoc 
+[[gh5]]
+
+==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. SC API Extensions
+
+A Khronos API being developed in the context of safety critical must follow the requirements given in the Khronos Requirements Document. The development of API extensions must follow the same requirements unless they are not intended for use in a safety critical deliverable. Those API extensions not intended for use in a safety critical environment do not need to meet all the Khronos SC requirements of the core SC API. 
+
+Such an API extension could be a debug extension used to facilitate diagnostics of the runtime implementation.
+
+IMPORTANT: It is advised that any extension connected with a SC API and its runtime should follow the same rigor and practices used for the development of the core API itself along side those practices and processes used for the SC item's development should that be the case.  
