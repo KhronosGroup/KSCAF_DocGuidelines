@@ -47,3 +47,6 @@ include::Guidelines_3_2_9_16011_DebugFunctionality.adoc[]
 
 include::Guidelines_3_2_11_5_SCAPIExtensions.adoc[]
 
+include::Guidelines_3_2_12_7_ReduceOptionsToAMinimum.adoc[]
+
+

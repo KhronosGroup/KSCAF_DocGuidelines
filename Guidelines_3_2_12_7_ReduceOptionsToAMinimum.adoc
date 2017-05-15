@@ -1,0 +1,35 @@
+// (C) Copyright 2014-2017 The Khronos Group Inc. All Rights Reserved.
+// Khronos Group Safety Critical API Development SCAP
+// document
+// 
+// Text format: asciidoc 8.6.9
+// Editor:      Asciidoc Book Editor
+//
+// Description: Guidelines 3.2.6 Github #7 Bugzilla #16056
+
+:Author: Illya Rudkin (spec editor)
+:Author Initials: IOR
+:Revision: 0.022
+
+// Hyperlink anchor, the ID matches those in 
+// 3_1_GuidelinesList.adoc 
+[[gh7]]
+
+==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Reduce function parameters' complexity
+
+Many functions in an API specification require one or more parameters which each in turn can allow numerous possibilities to alter the desired intended behavoir of the runtime. These permutations lead to complexity. It can also lead to operational redundancy where features will never be used in the context it is aimed for. In SC development it is generally bad practice to have unused code in the final implementation. To reduce this complexity and feature redundancy. it is advised that where possible things like:
+
+- modes of operation
+- enumerations
+- accuracy 
+- range of acceptable formats 
+
+be reduced or removed to allow the runtime to operate with just a minimum set of parameters with one mandatory option. 
+
+This would also have the added benefit that it gives a run time implementer the choice to re-introduce functionality where it only necessary by expanding the on the non-mandatory options the SC specification does allow.
+
+A further benefit to reduced operational complexity is it allows for simpler testing infrastructure to support the validation process.
+
+For example, an image API specification stipulates the many image formats it must handle. The SC version only mandates one format the rest are optional. 
+
+
