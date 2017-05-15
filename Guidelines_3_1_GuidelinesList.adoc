@@ -34,6 +34,5 @@ The following is a list of all the SCAP guidelines when considering designing an
 |<<b16018,{counter:section-id}>>  | Real time
 |<<b16159,{counter:section-id}>>  | Scheduling
 |<<b16011,{counter:section-id}>>  | Debug functionality
-|<<gh6,{counter:section-id}>>     | Unique ID
 |<<gh5,{counter:section-id}>>     | SC API extensions
 |=============================
