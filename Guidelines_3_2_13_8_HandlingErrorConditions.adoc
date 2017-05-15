@@ -17,6 +17,10 @@
 
 ==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Handling of error conditions
 
+Also see:
+
+- Lost context
+
 Collectively an SC API specification should list all the possible error conditions that can occur with a one to one mapping to the matching error description that can be provided. There should not be any unnecessary over generalisation of errors descriptions to cover multiple error conditions where distinctions can be made and returned to the client. 
 
 For non-recoverable errors the same guidance applies where possible. It is also advised that for the non-recoverable errors that they are listed separately to normal operational errors to make the distinction clear. 

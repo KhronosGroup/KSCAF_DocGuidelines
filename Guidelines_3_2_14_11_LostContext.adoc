@@ -1,0 +1,33 @@
+// (C) Copyright 2014-2017 The Khronos Group Inc. All Rights Reserved.
+// Khronos Group Safety Critical API Development SCAP
+// document
+// 
+// Text format: asciidoc 8.6.9
+// Editor:      Asciidoc Book Editor
+//
+// Description: Guidelines 3.2.6 Github #11 Bugzilla #16134
+
+:Author: Illya Rudkin (spec editor)
+:Author Initials: IOR
+:Revision: 0.022
+
+// Hyperlink anchor, the ID matches those in 
+// 3_1_GuidelinesList.adoc 
+[[gh11]]
+
+==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Lost context
+
+Also see:
+
+- Error handling
+
+
+With a close relationship to handling non-recoverable errors a lost context can be associated to such undefined states. Methods need to be devised so that the client is either made aware of a bad condition or should it continue polling the device it receives defined content such as:
+
+- an approriate 'screen image'
+- silent audio channel
+- valid data
+- data that can be interpreted as not valid
+
+The SC API specification when appropriate can give guideance on such states and the expected content should an external device sample it.
+
