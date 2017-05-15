@@ -31,9 +31,9 @@ The following is a list of all the SCAP guidelines when considering designing an
 |<<b16012,{counter:section-id}>>  | The SC API
 |<<b16024,{counter:section-id}>>  | Explicit timeout values
 |<<gh3,{counter:section-id}>>     | MISRA compliance
-|<<b16018,{counter:section-id}>>  | Real Time
+|<<b16018,{counter:section-id}>>  | Real time
 |<<b16159,{counter:section-id}>>  | Scheduling
-|<<b16011,{counter:section-id}>>  | Debug Functionality
+|<<b16011,{counter:section-id}>>  | Debug functionality
 |<<gh6,{counter:section-id}>>     | Unique ID
 |<<gh5,{counter:section-id}>>     | SC API extensions
 |=============================
