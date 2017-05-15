@@ -36,4 +36,5 @@ The following is a list of all the SCAP guidelines when considering designing an
 |<<b16011,{counter:section-id}>>  | Debug functionality
 |<<gh5,{counter:section-id}>>     | SC API extensions
 |<<gh7,{counter:section-id}>>     | Reduce function parameters' complexity
+|<<gh8,{counter:section-id}>>     | Handling of error conditions
 |=============================
