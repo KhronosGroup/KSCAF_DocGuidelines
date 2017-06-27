@@ -17,4 +17,16 @@
 
 ==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Memory Management
 
-Some text about memory management in a safety critical context
+====== Avoid deleting or freeing of memory
+
+Repeated deallocation (delete/free) to the heap can result in fragmentation and lead to non-deterministic delays in both allocation and deallocation functions (depending of the allocation deallocation algorithms used).
+
+If deletes are absolutely required, it must be carry out a complete heap release. As an example, buffer deletes and rebuilds – it would be safe to delete all textures and re-specify new textures. However, deleting individual textures would not be allowed. Deleting all textures would clear out the entire texture heap and allow subsequent allocations to be pointer level repeatable. The API needs to contain documentation for implementers on why the deletes are required and how the risk of having the deletes is mitigated so that such information may be referenced in the implementer’s certification documentation.
+
+NOTE: It is acceptable to perform deallocations to fixed size heaps because such heaps do not have issues with fragmentation.
+
+NOTE: If deallocations are absolutely required by the system, it is recommended that the entire heap be deallocated.
+
+NOTE: MISRA-C rule 118 states "Dynamic heap allocation shall not be used". A MISRA requirement.
+
+NOTE: It is assumed that the OS default generic shared allocation system (competing with other processes and resources) is being used. A specialised allocation system customised to the usage context may address deterministic concerns.
