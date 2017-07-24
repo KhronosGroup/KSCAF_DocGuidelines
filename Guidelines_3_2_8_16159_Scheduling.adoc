@@ -19,10 +19,10 @@
 
 In non-SC systems task (process or thread) scheduling is in general looked at as an operating system level task. Task switching is made in a manner presumed most appreciated for your average user. An application (or driver?) may nudge the scheduling in a proper direction if behavior is more or less deterministic, e.g. “yielding” right after an operation known to take a while, or waiting for a semaphore to unlock.
 
-SC-systems however put task scheduling more or less in the hands of the system developer. The SC OS provide means to separate partitions from locking each other out, e.g. high task priorities are available only for the OS itself to facilitate time partitioning. An unexpected “yield” or semaphore lock/unlock from a library may however have unexpected effects for an application.
+SC-systems however put task scheduling more or less in the hands of the system developer. The SC OS provide means to separate partitions from locking each other out, e.g. high task priorities are available only for the OS itself to facilitate time partitioning. An unexpected “yield” or semaphore lock/unlock from a library may however have unexpected effects for a client application.
 
-In the SC-specifications I´ve taken part of (OpenGL SC 1.1/2.0) there is nothing explicit on the topic task scheduling. A vendor is assumed to provide this information with the implementation.
+It is advised and good practice to provide information on the implementation’s scheduling policies and describe the rules so that a developer can understand or ask relevant questions.
 
-The guidelines will benefit from a best practice description of task scheduling; what is allowed and under exactly what circumstances rules apply. An SC specification will benefit from being explicit as to what its allowed. If everything is implementation dependent, so be it; at least a system developer will know what questions to ask in the event of a library or driver update or how to make a system suited for any behavior.
+Even such a naive description on of a scheduling policy would be useful for the developer for example “the implementation shall preserve the task’s scheduling state, i.e. no yield, no semaphore, no priority nudging, no nothing.”.
 
-A naïve best practice could be “implementation shall preserve the task scheduling state”, i.e. no yield, no semaphore, no priority nudging, no nothing.
+
