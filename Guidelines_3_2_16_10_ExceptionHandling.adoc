@@ -15,7 +15,7 @@
 // 3_1_GuidelinesList.adoc 
 [[gh10]]
 
-==== {chapter-id}.{counter:chapter-sub-id}.{counter:section-id}. Exception handling
+==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Exception handling
 
 In real-time systems, timing and meeting deadlines are the first priority, especially for safety critical systems. However, if exceptional conditions occur, there must be some detection and recovery mechanisms in place to prevent error propagation. The extent and complexity of the exception handling mechanisms will make it difficult to calculate and meet timing constraints. It is therefore generally discouraged to use C++ exception handling in the SC domain. Another contributor to this concern is because there is no standard defined on how exception handling should be implemented across compilers resulting in a variety of different approaches, the methods for transferring execution from the throw site to the catch site means critically the time taken can vary. It is this lack of certainty that the SC domain wants to avoid.
 

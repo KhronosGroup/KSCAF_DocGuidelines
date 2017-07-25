@@ -15,7 +15,7 @@
 // 3_1_GuidelinesList.adoc 
 [[gh16]]
 
-==== {chapter-id}.{counter:chapter-sub-id}.{counter:section-id}. Non recoverable error conditions and reporting status
+==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Non recoverable error conditions and reporting status
 
 Also see:
 
