@@ -13,6 +13,11 @@
 :Revision: 0.021
 
 === {chapter-id}.{counter:chapter-sub-id}. Denial-of-Service (DoS)
+
+See also:
+
+- Cybersecurity
+
 For both a safety hazard mitigation and cyber-attack point of view DoS should be identified and the risk reduced. DoS could occur via two attack vectors:
 
 1.  Data handling overloading

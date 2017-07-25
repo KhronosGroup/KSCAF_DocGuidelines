@@ -57,5 +57,8 @@ include::Guidelines_3_2_15_16_NonRecoverableErrorConditionsReportingStatus.adoc[
 
 include::Guidelines_3_2_16_10_ExceptionHandling.adoc[]
 
+include::Guidelines_3_2_17_28_Cybersecurity.adoc[]
+
+
 
 
