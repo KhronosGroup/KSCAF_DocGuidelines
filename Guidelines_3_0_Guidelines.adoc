@@ -55,5 +55,7 @@ include::Guidelines_3_2_14_11_LostContext.adoc[]
 
 include::Guidelines_3_2_15_16_NonRecoverableErrorConditionsReportingStatus.adoc[]
 
+include::Guidelines_3_2_16_10_ExceptionHandling.adoc[]
+
 
 

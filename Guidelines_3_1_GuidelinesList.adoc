@@ -39,4 +39,5 @@ The following is a list of all the SCAP guidelines when considering designing an
 |<<gh8,{counter:section-id}>>     | Handling of error conditions
 |<<gh11,{counter:section-id}>>    | Lost context
 |<<gh16,{counter:section-id}>>    | Non recoverable error conditions and reporting status
+|<<gh10,{counter:section-id}>>    | Exception handling
 |=============================
