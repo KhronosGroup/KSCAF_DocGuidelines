@@ -15,7 +15,7 @@
 // 3_1_GuidelinesList.adoc 
 [[b15991]]
 
-=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Memory Management
+=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Memory management
 
 ==== Avoid deleting or freeing of memory
 

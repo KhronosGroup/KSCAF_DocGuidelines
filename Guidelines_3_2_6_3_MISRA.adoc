@@ -15,7 +15,7 @@
 // 3_1_GuidelinesList.adoc 
 [[gh3]]
 
-=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. MISRA Compliance
+=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. MISRA compliance
 
 MISRA, Motor Industry Software Reliability Association, C and
 MISRA pass:[C++] are sets of software development guidelines for the C and pass:[C++] programming languages. Their aims are to facilitate code safety, security,portability and reliability in the context of embedded systems. MISRA has evolved as a widely accepted model for best practices by leading developers in sectors including automotive, aerospace, telecom, medical devices, defence,railway, and others.
