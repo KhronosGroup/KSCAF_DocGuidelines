@@ -15,7 +15,7 @@
 // 3_1_GuidelinesList.adoc 
 [[b16159]]
 
-==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Scheduling
+=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Scheduling
 
 In non-SC systems task (process or thread) scheduling is in general looked at as an operating system level task. Task switching is made in a manner presumed most appreciated for your average user. An application (or driver?) may nudge the scheduling in a proper direction if behavior is more or less deterministic, e.g. “yielding” right after an operation known to take a while, or waiting for a semaphore to unlock.
 

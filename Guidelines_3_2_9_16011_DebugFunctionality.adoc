@@ -15,6 +15,6 @@
 // 3_1_GuidelinesList.adoc 
 [[b16011]]
 
-==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Debug Functionality
+=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Debug Functionality
 
 Debug functionality which is not used during final run-time should be moved to an extension so that it does not need to go the certification process for the final product release.

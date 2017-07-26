@@ -15,7 +15,7 @@
 // 3_1_GuidelinesList.adoc 
 [[gh8]]
 
-==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Handling of error conditions
+=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Handling of error conditions
 
 Also see:
 

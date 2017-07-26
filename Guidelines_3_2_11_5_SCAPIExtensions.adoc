@@ -15,7 +15,7 @@
 // 3_1_GuidelinesList.adoc 
 [[gh5]]
 
-==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. SC API Extensions
+=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. SC API Extensions
 
 A Khronos API being developed in the context of safety critical must follow the requirements given in the Khronos Requirements Document. The development of API extensions must follow the same requirements unless they are not intended for use in a safety critical deliverable. Those API extensions not intended for use in a safety critical environment do not need to meet all the Khronos SC requirements of the core SC API. 
 

@@ -15,7 +15,7 @@
 // 3_1_GuidelinesList.adoc 
 [[gh7]]
 
-==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Reduce function parameters' complexity
+=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Reduce function parameters' complexity
 
 Many functions in an API specification require one or more parameters which each in turn can allow numerous possibilities to alter the desired intended behavoir of the runtime. These permutations lead to complexity. It can also lead to operational redundancy where features will never be used in the context it is aimed for. In SC development it is generally bad practice to have unused code in the final implementation. To reduce this complexity and feature redundancy. it is advised that where possible things like:
 

@@ -15,7 +15,7 @@
 // 3_1_GuidelinesList.adoc 
 [[gh28]]
 
-==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Cybersecurity and safety
+=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Cybersecurity and safety
 
 Cybersecurity is a concern for safety where safety goals can be compromised by external unauthorised interference. Understanding the attack vectors can help harden a SC API against recognised and yet unknown attack methods.
 

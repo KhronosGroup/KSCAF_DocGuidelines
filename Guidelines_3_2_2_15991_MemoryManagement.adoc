@@ -15,9 +15,9 @@
 // 3_1_GuidelinesList.adoc 
 [[b15991]]
 
-==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Memory Management
+=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Memory Management
 
-====== Avoid deleting or freeing of memory
+==== Avoid deleting or freeing of memory
 
 Repeated deallocation (delete/free) to the heap can result in fragmentation and lead to non-deterministic delays in both allocation and deallocation functions (depending of the allocation deallocation algorithms used).
 

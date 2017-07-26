@@ -15,7 +15,7 @@
 // 3_1_GuidelinesList.adoc 
 [[b16018]]
 
-==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Real Time
+=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Real Time
 
 The implementation of the SC API must have deterministic execution timing in real time systems and potentially non-deterministic techniques, such as dynamic memory allocation and locking, should be avoided where feasible. The API implementation must define the expected real-time characteristics, and particularly, whether hard or soft real-time is targeted. For all potentially blocking functions, a timeout option must be provided.
 event or state change occur.

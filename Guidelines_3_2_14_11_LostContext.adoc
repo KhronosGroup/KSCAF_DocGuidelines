@@ -15,7 +15,7 @@
 // 3_1_GuidelinesList.adoc 
 [[gh11]]
 
-==== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Lost context
+=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Lost context
 
 Also see:
 

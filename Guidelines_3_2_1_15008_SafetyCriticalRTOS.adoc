@@ -15,7 +15,7 @@
 // 3_1_GuidelinesList.adoc 
 [[b15008]]
 
-==== {chapter-id}.{counter:chapter-sub-id}.{counter:section-id}. List of SC RTOS and their unique features
+=== {chapter-id}.{counter:chapter-sub-id}.{counter:section-id}. List of SC RTOS and their unique features
 This section lists some of the unique features some operating systems support and how those features can result in unintended behavior. This list is not exhaustive or complete, it is meant as a guide and place to share issues which were caused by the unique features of operating systems.
 
 .List of RTOS
@@ -35,5 +35,5 @@ This section lists some of the unique features some operating systems support an
 |=============================
 
 [ftimePartitioning] 
-===== ARINC 653 Time Partitioning & Hard Time Partitioning  
+==== ARINC 653 Time Partitioning & Hard Time Partitioning  
 The ARINC 653 specification defines time partitioning where a process has control of the CPU for a specific amount of time and then the operating system will do a context switch even if the application is not done executing. This can be a problem for APIs which internally use locking mechanisms because the API has no understanding of when the time partition is ending. As such it is possible that one process locks a mutex/semaphore/... then is context switched and prevents all other processes from using that locked object. This differs from the regular lock contention issue in that the Time Partitioning scheduler will not allow the process holding the lock to run, while a priority preemptive scheduler may wake up the process holding the lock to let it unlock.
