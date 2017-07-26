@@ -30,3 +30,8 @@ NOTE: If deallocations are absolutely required by the system, it is recommended 
 NOTE: MISRA-C rule 118 states "Dynamic heap allocation shall not be used". A MISRA requirement.
 
 NOTE: It is assumed that the OS default generic shared allocation system (competing with other processes and resources) is being used. A specialised allocation system customised to the usage context may address deterministic concerns.
+
+==== Memory management unit (MMU)
+
+For higher safety critical levels safety standards generally ask for guarantees that an item (a system or component) is free from interference. Interference is a term given to external actions that interact in appropriately with the item to cause it to perform unspecified behaviour. Interference can come from other processes running on the system and for example walking over another process's memory space or outside activity otherwise known as hacking. It is therefore highly recommended that MMU be used to assist in freedom from interference.
+

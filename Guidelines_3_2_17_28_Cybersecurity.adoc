@@ -17,6 +17,10 @@
 
 === {chapter-id}.{chapter-sub-id}.{counter:section-id}. Cybersecurity and safety
 
+See also:
+
+- Memory management section 'memory management unit'
+
 Cybersecurity is a concern for safety where safety goals can be compromised by external unauthorised interference. Understanding the attack vectors can help harden a SC API against recognised and yet unknown attack methods.
 
 In the embedded coding domain, it is normal practice to encourage implementing the minimum code necessary to carry out a task which in turn simplifies the API. However, this approach can unintentionally expose implementation internals that you would wish to keep private. Internals that may in themselves not be used as part of an attack but allow information to be learned and access to deeper systems which can enable an attack later down the line.
