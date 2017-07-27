@@ -74,5 +74,5 @@ reported security incidents result from the exploitation of defects in software 
 The CERT Secure Coding Standards can be used as a measure of software security by determining the
 degree to which a software system complies with the rules and recommendations in this standard. While
 compliance does not guarantee the absence of vulnerabilities (for example, vulnerabilities resulting from de-
-sign  aws), it does guarantee the absence of coding errors that are commonly found to be the root causes
+sign flaws), it does guarantee the absence of coding errors that are commonly found to be the root causes
 of vulnerabilities.

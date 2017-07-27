@@ -40,4 +40,5 @@ The following is a list of all the SCAP guidelines when considering designing an
 |<<gh16,{counter:section-id}>>    | Non recoverable error conditions and reporting status
 |<<gh10,{counter:section-id}>>    | Exception handling
 |<<gh28,{counter:section-id}>>    | Cybersecurity and safety
+|<<gh29,{counter:section-id}>>    | Development out of context
 |=============================

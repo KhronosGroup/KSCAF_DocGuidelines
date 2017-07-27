@@ -59,6 +59,9 @@ include::Guidelines_3_2_16_10_ExceptionHandling.adoc[]
 
 include::Guidelines_3_2_17_28_Cybersecurity.adoc[]
 
+include::Guidelines_3_2_18_29_DevelopmentOutOfContext.adoc[]
+
+
 
 
 
