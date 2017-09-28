@@ -9,7 +9,7 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.021
+:Revision: 0.03
 
 // Automatic section numbering, use {counter:section-id}  
 :section-id: 0
@@ -17,7 +17,12 @@
 // Automatic chapter sub numbering, use {counter:chapter-sub-id}  
 :chapter-sub-id: 0
 
+ifdef::basebackend-docbook[]
+== Discussion Points
+endif::[]
+ifdef::basebackend-html[]
 == {counter:chapter-id}. Discussion Points
+endif::[]
 
 The discussion points are items of relevance to consider, to be aware off, when developing a safety critical API or implementing a runtime for the API. 
 

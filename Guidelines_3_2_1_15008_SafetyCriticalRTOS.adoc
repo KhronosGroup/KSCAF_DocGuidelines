@@ -9,17 +9,23 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.02
+:Revision: 0.03
 
 // Hyperlink anchor, the ID matches those in 
 // 3_1_GuidelinesList.adoc 
 [[b15008]]
 
+ifdef::basebackend-docbook[]
+=== List of SC RTOS and their unique features
+endif::[]
+ifdef::basebackend-html[]
 === {chapter-id}.{counter:chapter-sub-id}.{counter:section-id}. List of SC RTOS and their unique features
+endif::[]
+
 This section lists some of the unique features some operating systems support and how those features can result in unintended behavior. This list is not exhaustive or complete, it is meant as a guide and place to share issues which were caused by the unique features of operating systems.
 
 .List of RTOS
-[caption="Table 3.2.1: ", width="90%", options="header"]
+[caption="Table {counter:table-id}: ", width="90%", options="header"]
 |=============================
 | RTOS Name | Vendor | Unique Features
 | DeOS | DDC-I | <<ftimePartitioning,Time Partitioning>>

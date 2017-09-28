@@ -9,13 +9,18 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.02
+:Revision: 0.03
 
 // Hyperlink anchor, the ID matches those in 
 // 3_1_GuidelinesList.adoc 
 [[gh29]]
 
+ifdef::basebackend-docbook[]
+=== Development out of context
+endif::[]
+ifdef::basebackend-html[]
 === {chapter-id}.{chapter-sub-id}.{counter:section-id}. Development out of context
+endif::[]
 
 For many domains like avionics, automotive or medicine there is a whole supply chain from the low level components to the component that is the complete item; a car or plane. The safety standards for those domains want the process of quality control to be applied to all parts of the supply chain. Hazard analysis is carried out and safety goals identified in the context of the use of the item. However, for lower level component makers, who create discrete smaller parts whether hardware or software, there are often no clearly defined user cases. They do not know how their parts would be used in the final vehicle and what other components and systems they would have to interact with.
 

@@ -9,13 +9,18 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.02
+:Revision: 0.03
 
 // Hyperlink anchor, the ID matches those in 
 // 3_1_GuidelinesList.adoc 
 [[gh28]]
 
+ifdef::basebackend-docbook[]
+=== Cybersecurity and safety
+endif::[]
+ifdef::basebackend-html[]
 === {chapter-id}.{chapter-sub-id}.{counter:section-id}. Cybersecurity and safety
+endif::[]
 
 See also:
 

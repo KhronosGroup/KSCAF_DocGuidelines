@@ -9,13 +9,18 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.02
+:Revision: 0.03
 
 // Hyperlink anchor, the ID matches those in 
 // 3_1_GuidelinesList.adoc 
 [[b16024]]
 
+ifdef::basebackend-docbook[]
+=== Explicit timeout values
+endif::[]
+ifdef::basebackend-html[]
 === {chapter-id}.{chapter-sub-id}.{counter:section-id}. Explicit timeout values
+endif::[]
 
 Similar to being able to accurately control memory usage on an embedded system, in a SC system the execution time must be accurately controlled. A key requirement of system safety certification is to guarantee that a program has the required amount of execution time for its worst case execution behavior. This is referred to as the systems Worst Case Execution Time. To this extent many safety critical operating system provide time partitioning and guarantees about how long any single operating system call may take. If an application exceeds its time budget the application can be forced to shut down.
 
