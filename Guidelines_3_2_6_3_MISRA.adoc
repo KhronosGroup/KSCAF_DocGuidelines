@@ -25,6 +25,25 @@ endif::[]
 MISRA, Motor Industry Software Reliability Association, C and
 MISRA pass:[C++] are sets of software development guidelines for the C and pass:[C++] programming languages. Their aims are to facilitate code safety, security,portability and reliability in the context of embedded systems. MISRA has evolved as a widely accepted model for best practices by leading developers in sectors including automotive, aerospace, telecom, medical devices, defence,railway, and others.
 
+MISRA rule parsing is available through various code quality management tools. The MISRA standard document which explains the rules or requirements with context and examples can be purchased from MISRA directly. The tools implement the standard and parse the code to produce a report of the broken rules. A MISRA qualification tool would produce a typical out such as that shown below.
+
+[source]
+Summary:
+[50] MISRA C++ 2008 (MISRA2008)
+[11] [2] [23]
+[1] The plain char type shall only be used for the storage and use of character values (MISRA2008-5_0_11-3)
+[3] An implicit integral conversion shall not change the signedness of the underlying type (MISRA2008-5_0_4_a-3)
+[2] A variable which is not modified shall be const qualified (MISRA2008-7_1_1-3)
+[2] using-directives shall not be used (MISRA2008-7_3_4-3)
+[2] typedefs that indicate size and signedness should be used in place of the basic numerical types (MISRA2008-3_9_2-4) [4] Functions should not call themselves, either directly or indirectly (MISRA2008-7_5_4-4)
+The source.cpp file with issues (by line number):
+A class, union or enum name (including qualification, if any) shall be a unique identifier (MISRA2008-2_10_4_a-3)
+An identifier declared to be an object or type shall be defined in a block that minimizes its visibility (MISRA2008-3_4_1_b-3)
+The types used for an object, a function return type, or a function parameter shall be token-for-token identical in all declarations and re- declarations (MISRA2008-3_9_1-3)
+dtp Recommended Tasks to Accomplish Today : 50
+/Analysis/../llvm/lib/Analysis/AliasAnalysis.cpp
+102: A tag name 'Result' is reused
+
 It is recommended that a Khrono SC API follows the MISRA
 C or MISRA pass:[C++] guidelines as it is can be assummed that the development of an SC API implementation would also follow MISRA guidelines. MISRA also provide a conformance test suite to ensure compliance.
 
