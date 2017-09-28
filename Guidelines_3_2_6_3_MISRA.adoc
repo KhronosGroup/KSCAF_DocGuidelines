@@ -25,7 +25,9 @@ endif::[]
 MISRA, Motor Industry Software Reliability Association, C and
 MISRA pass:[C++] are sets of software development guidelines for the C and pass:[C++] programming languages. Their aims are to facilitate code safety, security,portability and reliability in the context of embedded systems. MISRA has evolved as a widely accepted model for best practices by leading developers in sectors including automotive, aerospace, telecom, medical devices, defence,railway, and others.
 
-MISRA rule parsing is available through various code quality management tools. The MISRA standard document which explains the rules or requirements with context and examples can be purchased from MISRA directly. The tools implement the standard and parse the code to produce a report of the broken rules. A MISRA qualification tool would produce a typical out such as that shown below.
+Many companies that develop software in the safety domain have this standard or similar quality standards as an integral part of their quality management process to provide assurance during safety assement by internal or external audits. An integral part can in some cases mean it must be complied with. 
+
+MISRA rule parsing is available through various code quality management tools. The MISRA standard document lists the rules or requirements with context and examples. The document can be purchased from MISRA directly. Tools implement the standard and parse source code to produce a report. A MISRA qualification tool would produce a typical report such as that shown below.
 
 [source]
 Summary:
@@ -45,7 +47,7 @@ dtp Recommended Tasks to Accomplish Today : 50
 102: A tag name 'Result' is reused
 
 It is recommended that a Khrono SC API follows the MISRA
-C or MISRA pass:[C++] guidelines as it is can be assummed that the development of an SC API implementation would also follow MISRA guidelines. MISRA also provide a conformance test suite to ensure compliance.
+C or MISRA pass:[C++] guidelines as it is can be assummed that the development of an SC API implementation would also follow MISRA guidelines and by not providing a MISRA compliant SC API could mean the standard is not adopted without further modification.
 
 For more information on MISRA visit the following web links: +
 - https://en.wikipedia.org/wiki/MISRA_C +
