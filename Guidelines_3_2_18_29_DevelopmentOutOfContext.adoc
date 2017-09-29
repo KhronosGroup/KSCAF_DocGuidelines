@@ -22,7 +22,7 @@ ifdef::basebackend-html[]
 === {chapter-id}.{chapter-sub-id}.{counter:section-id}. Development out of context
 endif::[]
 
-For many domains like avionics, automotive or medicine there is a whole supply chain from the low level components to the component that is the complete item; a car or plane. The safety standards for those domains want the process of quality control to be applied to all parts of the supply chain. Hazard analysis is carried out and safety goals identified in the context of the use of the item. However, for lower level component makers, who create discrete smaller parts whether hardware or software, there are often no clearly defined user cases. They do not know how their parts would be used in the final vehicle and what other components and systems they would have to interact with.
+For many domains like avionics, automotive or medicine there is a whole supply chain from the low -level components to the component that is the complete item; a car or plane. The safety standards for those domains want the process of quality control to be applied to all parts of the supply chain. Hazard analysis is carried out and safety goals identified in the context of the use of the item. However, for lower level component makers, who create discrete smaller parts whether hardware or software, there are often no clearly defined user cases. They do not know how their parts would be used in the final vehicle and what other components and systems they would have to interact with.
 
 The ISO 26262 standard tries to address this by introducing the concept of safety element out of context (SEooC). This concept asks you to list the assumptions that have been made to support the safety goals of the item out of context. It is the responsibility of the OEM or tier 1 supply to define the safety goals and functional safety concept and communicate that down the supply chain.
 
@@ -39,4 +39,4 @@ The documentation to support the assumptions needs to be comprehensive. It needs
 .SC API out of context
 image::images/3_2_18_29_SEooCDevProcessSCAPI.png[width=70%, align=center, caption="Figure 3.2.18.1: "]
 
-The Khrono SC API itself is very much SEooC and it has to designed to be robust yet flexible enough to accommodate the implementers with their unique safety goals and assumptions.
+The Khronos SC API itself is very much SEooC and it must be designed to be robust yet flexible enough to accommodate the implementers with their unique safety goals and assumptions.

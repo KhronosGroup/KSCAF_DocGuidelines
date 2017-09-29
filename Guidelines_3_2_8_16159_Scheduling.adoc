@@ -22,9 +22,9 @@ ifdef::basebackend-html[]
 === {chapter-id}.{chapter-sub-id}.{counter:section-id}. Scheduling
 endif::[]
 
-In non-SC systems task (process or thread) scheduling is in general looked at as an operating system level task. Task switching is made in a manner presumed most appreciated for your average user. An application (or driver?) may nudge the scheduling in a proper direction if behavior is more or less deterministic, e.g. “yielding” right after an operation known to take a while, or waiting for a semaphore to unlock.
+In non-safety critical (SC) systems task (process or thread) scheduling is in general looked at as an operating system level task. Task switching is made in a manner presumed most appreciated for your average user. An application (or driver?) may nudge the scheduling in a proper direction if behavior is more or less deterministic, e.g. “yielding” right after an operation known to take a while, or waiting for a semaphore to unlock.
 
-SC-systems however put task scheduling more or less in the hands of the system developer. The SC OS provide means to separate partitions from locking each other out, e.g. high task priorities are available only for the OS itself to facilitate time partitioning. An unexpected “yield” or semaphore lock/unlock from a library may however have unexpected effects for a client application.
+SC systems however put task scheduling more or less in the hands of the system developer. The SC OS provide means to separate partitions from locking each other out, e.g. high task priorities are available only for the OS itself to facilitate time partitioning. An unexpected “yield” or semaphore lock/unlock from a library may however have unexpected effects for a client application.
 
 It is advised and good practice to provide information on the implementation’s scheduling policies and describe the rules so that a developer can understand or ask relevant questions.
 

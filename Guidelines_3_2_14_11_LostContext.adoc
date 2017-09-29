@@ -29,10 +29,10 @@ Also see:
 
 With a close relationship to handling non-recoverable errors a lost context can be associated to such undefined states. Methods need to be devised so that the client is either made aware of a bad condition or should it continue polling the device it receives defined content such as:
 
-- an approriate 'screen image'
+- an appropriate 'screen image'
 - silent audio channel
 - valid data
 - data that can be interpreted as not valid
 
-The SC API specification when appropriate can give guideance on such states and the expected content should an external device sample it.
+The SC API specification when appropriate can give guidance on such states and the expected content should an external device sample it.
 

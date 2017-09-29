@@ -22,7 +22,7 @@ ifdef::basebackend-html[]
 === {chapter-id}.{chapter-sub-id}.{counter:section-id}. Conformance testing
 endif::[]
 
-It is not the intent for Khronos conformance tests for Safety Critical technologies to used or supplied for certification testing. The intent for the Khronos conformance tests are to test the implementations conformance with the specification in order to ensure that all implementations share the same contract with the application and thereby avoid industry fragmentation through different behavior for the same function.
+It is not the intent for Khronos conformance tests for Safety Critical technologies to used or supplied for certification testing. The intent for the Khronos conformance tests are to test the implementations conformance with the specification to ensure that all implementations share the same contract with the application and thereby avoid industry fragmentation through different behavior for the same function.
 
 Please read the
 <<Guideline_2_1_SCAPRiderStatement,guideline statement>>.

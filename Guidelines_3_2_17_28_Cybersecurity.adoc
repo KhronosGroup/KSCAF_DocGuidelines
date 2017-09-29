@@ -60,24 +60,9 @@ It is therefore recommended cybersecurity is taken into consideration alongside 
 
 ==== CERT C guidelines for embedded developers
 
-The CERT C and C++ Secure Coding Standards provide rules and recommendations for secure coding in
-the C and C++ programming languages. The CERT Division at the Software Engineering Institute (SEI) op-
-erated by Carnegie Mellon University publishes these standards. SEI is a research and development center
-primarily funded by the U.S. Department of Defense and the Department of Homeland Security. During re-
-search conducted over 15 plus years, CERT studied cases of software vulnerabilities and compiled a database.
-The Secure Coding Initiative uses this database to help develop secure coding practices in C.
+The CERT C and pass:[C++] Secure Coding Standards provide rules and recommendations for secure coding in the C and pass:[C++] programming languages. The CERT Division at the Software Engineering Institute (SEI) operated by Carnegie Mellon University publishes these standards. SEI is a research and development centre primarily funded by the U.S. Department of Defence and the Department of Homeland Security. During research conducted over 15 plus years, CERT studied cases of software vulnerabilities and compiled a database. The Secure Coding Initiative uses this database to help develop secure coding practices in C. 
 
-CERT provides rulesets for secure coding in C and C++. Each guideline consists of a title, a description, a
-non-compliant code example, and examples of compliant solutions. The guidelines cover avoiding coding
-and implementation errors as well as low-level design errors. The aim of these guidelines is to eliminate in-
-secure coding practices and unde ned behaviors that can lead to exploitable vulnerabilities. CERT describes
-a vulnerability as a software defect that affects security when it is present in information systems. The defect
-may be minor, in that it does not affect the performance or results produced by the software, but nevertheless
-may be exploited by an attack that results in a signi cant breach of security. CERT estimates that up to 90% of
-reported security incidents result from the exploitation of defects in software code or design.
+CERT provides rulesets for secure coding in C and pass:[C++]. Each guideline consists of a title, a description, a non-compliant code example, and examples of compliant solutions. The guidelines cover avoiding coding and implementation errors as well as low-level design errors. The aim of these guidelines is to eliminate insecure coding practices and behaviors that can lead to exploitable vulnerabilities. CERT describes a vulnerability as a software defect that affects security when it is present in information systems. The defect may be minor, in that it does not affect the performance or results produced by the software, but nevertheless may be exploited by an attack that results in a significant breach of security. CERT estimates that up to 90% of reported security incidents result from the exploitation of defects in software code or design.
 
 The CERT Secure Coding Standards can be used as a measure of software security by determining the
-degree to which a software system complies with the rules and recommendations in this standard. While
-compliance does not guarantee the absence of vulnerabilities (for example, vulnerabilities resulting from de-
-sign flaws), it does guarantee the absence of coding errors that are commonly found to be the root causes
-of vulnerabilities.
+degree to which a software system complies with the rules and recommendations in this standard. While compliance does not guarantee the absence of vulnerabilities (for example, vulnerabilities resulting from design flaws), it does guarantee the absence of coding errors that are commonly found to be the root causes of vulnerabilities.

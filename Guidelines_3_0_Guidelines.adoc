@@ -24,7 +24,7 @@ ifdef::basebackend-html[]
 == {counter:chapter-id}. Guidelines
 endif::[]
 
-The guidelines listed in table 3.1.1 are all the guidelines in this document. However this list is continuously revised with new guidelines being added on a regular basis. 
+The guidelines listed in table 3.1.1 are all the guidelines in this document. However, this list is continuously revised with new guidelines being added on a regular basis. 
 
 IMPORTANT: It is therefore recommended that the guidelines be periodically reviewed for new or updated guidelines.
 

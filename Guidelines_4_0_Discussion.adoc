@@ -26,6 +26,6 @@ endif::[]
 
 The discussion points are items of relevance to consider, to be aware off, when developing a safety critical API or implementing a runtime for the API. 
 
-Each discussion point should be applied at the design stage to ascertain if it is relevant and if relevant the onous is on you as a developer to provide evidence of either why it is not relevant or how it has been addressed.
+Each discussion point should be applied at the design stage to ascertain if it is relevant and if relevant the onus is on you as a developer to provide evidence of either why it is not relevant or how it has been addressed.
 
 include::Guidelines_4_1_Denial-of-Service.adoc[]
