@@ -1,7 +1,7 @@
 // (C) Copyright 2014-2017 The Khronos Group Inc. All Rights Reserved.
 // Khronos Group Safety Critical API Development SCAP
 // document
-// 
+//
 // Text format: asciidoc 8.6.9
 // Editor:      Asciidoc Book Editor
 //
@@ -11,8 +11,8 @@
 :Author Initials: IOR
 :Revision: 0.03
 
-// Hyperlink anchor, the ID matches those in 
-// 3_1_GuidelinesList.adoc 
+// Hyperlink anchor, the ID matches those in
+// 3_1_GuidelinesList.adoc
 [[gh29]]
 
 ifdef::basebackend-docbook[]
@@ -37,6 +37,7 @@ The documentation to support the assumptions needs to be comprehensive. It needs
 
 [[SEooC, 3.2.18.1]]
 .SC API out of context
-image::images/3_2_18_29_SEooCDevProcessSCAPI.png[width=70%, align=center, caption="Figure 3.2.18.1: "]
+[.right.text-center]
+image::images/3_2_18_29_SEooCDevProcessSCAPI.png[pdfwidth=50%, width=50%, align=center, caption="Figure 3.2.18.1: "]
 
 The Khronos SC API itself is very much SEooC and it must be designed to be robust yet flexible enough to accommodate the implementers with their unique safety goals and assumptions.
