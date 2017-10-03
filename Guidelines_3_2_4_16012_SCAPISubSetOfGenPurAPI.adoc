@@ -30,7 +30,7 @@ This does not prevent addition of symbols (enumerations) where needed.
 
 [[ProfileTriangle, 3.2.4.1]]
 .Profile triangle
-image::images/3_2_4_1_ProfileTriangleDiagram.png[pdfwidth=50%, scaledwidth=50%, align=center, caption="Figure 3.2.4.1: "]
+image::images/3_2_4_1_ProfileTriangleDiagram.png[pdfwidth=50%, width=50%, align=center, caption="Figure 3.2.4.1: "]
 
 xxxThe figure <<ProfileTriangle>> shows a common profiling pyramid where the Desktop profile exists as the largest set of APIs, and an Embedded version may remove functionality and APIs which are not required in that profile. The SC version of the API is normally a smaller subset than the Embedded version of the API.
 
@@ -44,7 +44,7 @@ Long hardware prototype times, limited quantities, and specialized SC driver dev
 
 [[ProfileVennDiagram, 3.2.4.2]]
 .Profile Venn diagram
-image::images/3_2_4_2_ProfileVennDiagram.png[pdfwidth=50%, scaledwidth=50%, align=center, caption="Figure 3.2.4.2: "]
+image::images/3_2_4_2_ProfileVennDiagram.png[pdfwidth=50%, width=50%, align=center, caption="Figure 3.2.4.2: "]
 
 This Venn diagram shown in figure <<ProfileVennDiagram>> shows that while the profile triangle is a general rule of thumb, that the different profiles may include additional APIs and functionality to meet the requirements of the specific profile. It also shows that the SC Core API Profile can include Desktop Extensions and is not limited to only the Desktop Core API.
 
