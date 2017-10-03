@@ -26,6 +26,7 @@ Install Asciidoc Editor FX then double click on the file *Guidelines_0_MainTopLe
 3/10/2016 The documents have been created using Asciidoc Editor FX and the Asciidoctor executable. The majority of the Asciidoc formatting works ok using the when using the Editor FX, some parts like to the TOC work with quirks, some Asciidoc attributes do not appear to work. Using Asciidoc Editor FX is quicker to get off the ground without to much bother and automatically shows an HTML preview. Also an  added bonus is you are able to export from within the Editor both PDF and HTML documents. AsciidocEditorFX is available on most platforms. The editor contains everything including fonts, styles and themes. But it is broken on the Mac OSX High Sierra.
 
 An alternative is to use the editor Atom with the following packages installed:
+
 * markdown-writer
 * linter-markdown (and linter)
 * markdown-scroll-sync
