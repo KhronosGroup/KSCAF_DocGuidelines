@@ -9,7 +9,7 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.04
+:Revision: 0.041
 
 // Automatic section numbering, use {counter:section-id}
 :section-id: 0
@@ -67,3 +67,5 @@ include::Guidelines_3_2_17_28_Cybersecurity.adoc[]
 include::Guidelines_3_2_18_29_DevelopmentOutOfContext.adoc[]
 
 include::Guidelines_3_2_19_30_ProvideInitAndShutdown.adoc[]
+
+include::Guidelines_3_2_20_31_FirstTaskPerformHARA.adoc[]
