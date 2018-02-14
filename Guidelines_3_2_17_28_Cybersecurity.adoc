@@ -1,7 +1,7 @@
-// (C) Copyright 2014-2017 The Khronos Group Inc. All Rights Reserved.
+// (C) Copyright 2014-2018 The Khronos Group Inc. All Rights Reserved.
 // Khronos Group Safety Critical API Development SCAP
 // document
-// 
+//
 // Text format: asciidoc 8.6.9
 // Editor:      Asciidoc Book Editor
 //
@@ -9,10 +9,10 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.03
+:Revision: 0.04
 
-// Hyperlink anchor, the ID matches those in 
-// 3_1_GuidelinesList.adoc 
+// Hyperlink anchor, the ID matches those in
+// 3_1_GuidelinesList.adoc
 [[gh28]]
 
 ifdef::basebackend-docbook[]
@@ -30,37 +30,37 @@ Cybersecurity is a concern for safety where safety goals can be compromised by e
 
 In the embedded coding domain, it is normal practice to encourage implementing the minimum code necessary to carry out a task which in turn simplifies the API. However, this approach can unintentionally expose implementation internals that you would wish to keep private. Internals that may in themselves not be used as part of an attack but allow information to be learned and access to deeper systems which can enable an attack later down the line.
 
-Information about how a system works and thus gain access to the data within can take many forms:  
+Information about how a system works and thus gain access to the data within can take many forms:
 
-- Fuzzing the API  
-- Applying invalid input parameter data  
+- Fuzzing the API
+- Applying invalid input parameter data
 - Using status results or errors to obtain the correct way to use the API
 
 Code quality checkers like MISRA work well but do not cover data integrity for instance. An omission in the software’s checkers can expose unspecified behaviour or supposed private data. The code can pass quality criteria but can it defend against:
 
-- Data injection  
-- Data whose values are out of range  
-- Data set size which is too big or to small  
-- Data type checking  
-- Malformed input data which needs to be parsed or executed  
-- No data  
+- Data injection
+- Data whose values are out of range
+- Data set size which is too big or to small
+- Data type checking
+- Malformed input data which needs to be parsed or executed
+- No data
 - A malformed kernel or script that can accesses parts of a system a normal kernel would not need to do
 
-Incomplete data integrity checks can lead too:  
+Incomplete data integrity checks can lead too:
 
-- Excessive calculation times (leading to Denial of Service)  
-- Undetermined or unspecified behaviour  
+- Excessive calculation times (leading to Denial of Service)
+- Undetermined or unspecified behaviour
 - Generating false error or status code misinterpreted by the client application
 
 An API that can allow for appropriate authorization and authentication policies can further strengthen against attack vectors in addition to complete parameter value and data integrity checking. Does the SC API support versioning or ID checking?
 
-On an embedding system with an OS supporting multiple executing processes allows for the possibility of interference by one process on another. The ‘attacking’ process could be a non-critical one written to comply with a lower safety critical quality standard, for example ISO 26262 ASIL-A or QA. The lower applied code quality rigor or data integrity checked required for such a process could allow for an attack vector in to higher safety critical processes. From a cybersecurity point of view, it does not align with safety critical levels and all surfaces are open for exploring and attack. A successful attack shows a gap in your safety analysis.
+On an embedding system with an OS supporting multiple executing processes allows for the possibility of interference by one process on another. The ‘attacking’ process could be a non-critical one written to comply with a lower safety critical quality standard, for example ISO 26262 ASIL-A or QM (quality managed following ISO 9001). The lower applied code quality rigor or data integrity checked required for such a process could allow for an attack vector in to higher safety critical processes. From a cybersecurity point of view, it does not align with safety critical levels and all surfaces are open for exploring and attack. A successful attack shows a gap in your safety analysis.
 
 It is therefore recommended cybersecurity is taken into consideration alongside the safety standards being referenced to form a SC API. Many of the safety standard bodies are already looking at either integrating cybersecurity vulnerability standards into new versions of their standards or adapting their standard to accompany and reference a security standard to complete the safety standard. Cybersecurity guideline standards such as the European CAPUL, ISO/IEC 27032:2012 Information Technology Security Techniques guidelines for cyber-security and SAE J3061 Cyber-security guidebook for cyber-physical vehicle systems are good examples where security standards are being created to compliment safety standards.
 
 ==== CERT C guidelines for embedded developers
 
-The CERT C and pass:[C++] Secure Coding Standards provide rules and recommendations for secure coding in the C and pass:[C++] programming languages. The CERT Division at the Software Engineering Institute (SEI) operated by Carnegie Mellon University publishes these standards. SEI is a research and development centre primarily funded by the U.S. Department of Defence and the Department of Homeland Security. During research conducted over 15 plus years, CERT studied cases of software vulnerabilities and compiled a database. The Secure Coding Initiative uses this database to help develop secure coding practices in C. 
+The CERT C and pass:[C++] Secure Coding Standards provide rules and recommendations for secure coding in the C and pass:[C++] programming languages. The CERT Division at the Software Engineering Institute (SEI) operated by Carnegie Mellon University publishes these standards. SEI is a research and development centre primarily funded by the U.S. Department of Defence and the Department of Homeland Security. During research conducted over 15 plus years, CERT studied cases of software vulnerabilities and compiled a database. The Secure Coding Initiative uses this database to help develop secure coding practices in C.
 
 CERT provides rulesets for secure coding in C and pass:[C++]. Each guideline consists of a title, a description, a non-compliant code example, and examples of compliant solutions. The guidelines cover avoiding coding and implementation errors as well as low-level design errors. The aim of these guidelines is to eliminate insecure coding practices and behaviors that can lead to exploitable vulnerabilities. CERT describes a vulnerability as a software defect that affects security when it is present in information systems. The defect may be minor, in that it does not affect the performance or results produced by the software, but nevertheless may be exploited by an attack that results in a significant breach of security. CERT estimates that up to 90% of reported security incidents result from the exploitation of defects in software code or design.
 

@@ -1,7 +1,7 @@
-// (C) Copyright 2014-2017 The Khronos Group Inc. All Rights Reserved.
+// (C) Copyright 2014-2018 The Khronos Group Inc. All Rights Reserved.
 // Khronos Group Safety Critical API Development SCAP
 // document
-// 
+//
 // Text format: asciidoc 8.6.9
 // Editor:      Asciidoc Book Editor
 //
@@ -9,10 +9,10 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.03
+:Revision: 0.04
 
-// Hyperlink anchor, the ID matches those in 
-// 3_1_GuidelinesList.adoc 
+// Hyperlink anchor, the ID matches those in
+// 3_1_GuidelinesList.adoc
 [[gh8]]
 
 ifdef::basebackend-docbook[]
@@ -26,9 +26,8 @@ Also see:
 
 - Lost context
 
-Collectively an SC API specification should list all the possible error conditions that can occur with a one to one mapping to the matching error description that can be provided. There should not be any unnecessary over generalisation of errors descriptions to cover multiple error conditions where distinctions can be made and returned to the client. 
+Collectively an SC API specification should list all the possible error conditions that can occur with a one to one mapping to the matching error description that can be provided. There should not be any unnecessary over generalisation of errors descriptions to cover multiple error conditions where distinctions can be made and returned to the client.
 
-For non-recoverable errors the same guidance applies where possible. It is also advised that for the non-recoverable errors that they are listed separately to normal operational errors to make the distinction clear. 
+For non-recoverable errors the same guidance applies where possible. It is also advised that for the non-recoverable errors that they are listed separately to normal operational errors to make the distinction clear.
 
-Depending on the SC hazard level, the higher it is, there is likely the need for the client to want to be able to access an error description for those parts of a system that are not recoverable so that it may carry out appropriate planned action.  
-
+Depending on the SC hazard level, the higher it is, there is likely the need for the client to want to be able to access an error description for those parts of a system that are not recoverable so that it may carry out appropriate planned action.

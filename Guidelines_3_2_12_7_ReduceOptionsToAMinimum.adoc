@@ -1,7 +1,7 @@
-// (C) Copyright 2014-2017 The Khronos Group Inc. All Rights Reserved.
+// (C) Copyright 2014-2018 The Khronos Group Inc. All Rights Reserved.
 // Khronos Group Safety Critical API Development SCAP
 // document
-// 
+//
 // Text format: asciidoc 8.6.9
 // Editor:      Asciidoc Book Editor
 //
@@ -9,10 +9,10 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.03
+:Revision: 0.04
 
-// Hyperlink anchor, the ID matches those in 
-// 3_1_GuidelinesList.adoc 
+// Hyperlink anchor, the ID matches those in
+// 3_1_GuidelinesList.adoc
 [[gh7]]
 
 ifdef::basebackend-docbook[]
@@ -30,15 +30,13 @@ Many functions in an API specification require one or more parameters which each
 
 - Modes of operation
 - Enumerations
-- Accuracy 
-- Range of acceptable formats 
+- Accuracy
+- Range of acceptable formats
 
-be reduced or removed to allow the runtime to operate with just a minimum set of parameters with one mandatory option. 
+be reduced or removed to allow the runtime to operate with just a minimum set of parameters with one mandatory option.
 
 This would also have the added benefit that it gives a run time implementer the choice to re-introduce functionality where it only necessary by expanding the on the non-mandatory options the SC specification does allow.
 
 A further benefit to reduced operational complexity is it allows for simpler testing infrastructure to support the validation process.
 
-For example, an image API specification stipulates the many image formats it must handle. The SC version only mandates one format the rest are optional. 
-
-
+For example, an image API specification stipulates the many image formats it must handle. The SC version only mandates one format the rest are optional.

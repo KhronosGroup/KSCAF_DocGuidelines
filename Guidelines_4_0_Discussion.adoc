@@ -1,7 +1,7 @@
-// (C) Copyright 2014-2017 The Khronos Group Inc. All Rights Reserved.
+// (C) Copyright 2014-2018 The Khronos Group Inc. All Rights Reserved.
 // Khronos Group Safety Critical API Development SCAP
 // document
-// 
+//
 // Text format: asciidoc 8.6.9
 // Editor:      Asciidoc Book Editor
 //
@@ -9,12 +9,12 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.03
+:Revision: 0.04
 
-// Automatic section numbering, use {counter:section-id}  
+// Automatic section numbering, use {counter:section-id}
 :section-id: 0
 
-// Automatic chapter sub numbering, use {counter:chapter-sub-id}  
+// Automatic chapter sub numbering, use {counter:chapter-sub-id}
 :chapter-sub-id: 0
 
 ifdef::basebackend-docbook[]
@@ -24,7 +24,7 @@ ifdef::basebackend-html[]
 == {counter:chapter-id}. Discussion Points
 endif::[]
 
-The discussion points are items of relevance to consider, to be aware off, when developing a safety critical API or implementing a runtime for the API. 
+The discussion points are items of relevance to consider, to be aware off, when developing a safety critical API or implementing a runtime for the API.
 
 Each discussion point should be applied at the design stage to ascertain if it is relevant and if relevant the onus is on you as a developer to provide evidence of either why it is not relevant or how it has been addressed.
 

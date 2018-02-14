@@ -1,0 +1,31 @@
+// (C) Copyright 2014-2018 The Khronos Group Inc. All Rights Reserved.
+// Khronos Group Safety Critical API Development SCAP
+// document
+//
+// Text format: asciidoc 8.6.9
+// Editor:      Asciidoc Book Editor
+//
+// Description: Guidelines 3.2.16 Guidelines Git #30
+
+:Author: Illya Rudkin (spec editor)
+:Author Initials: IOR
+:Revision: 0.04
+
+// Hyperlink anchor, the ID matches those in
+// 3_1_GuidelinesList.adoc
+[[gh30]]
+
+ifdef::basebackend-docbook[]
+=== Provide initialisation and shutdown functions
+endif::[]
+ifdef::basebackend-html[]
+=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Provide initialisation and shutdown functions
+endif::[]
+
+It is generally accepted and advised for safety critical (SC) systems that all resources that are required during the lifetime of a process are allocated, bound to or located before commencing work whenever possible. Should during the initialisation stage of the SC implementation it is found that one or more critical resources are not available for the process to continue and operate as expected efficiently then the initialisation phase should terminate reporting back to the client the error status so that the client application can consider appropriate planned mitigation actions.
+
+It is recommended that a SC API provide an explicit initialisation function which does not have dependencies on other calls in the same API and can be called at the earliest opportunity before commencing work.
+
+The error status should be clear, unique and unambiguous for each and every resource that is not available.
+
+Conversely a SC implementation on termination should release all the resources or bindings acquired during initialisation or during runtime. It is therefore recommended there is a matching shutdown and release function provided in the same SC API to enable an implementation to release its resources. The shutdown functions should return the status on each of the resources which failed to be released.
