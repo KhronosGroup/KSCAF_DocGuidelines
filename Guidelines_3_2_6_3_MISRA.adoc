@@ -25,7 +25,7 @@ endif::[]
 MISRA, Motor Industry Software Reliability Association, C and
 MISRA pass:[C++] are sets of software development guidelines for the C and pass:[C++] programming languages. Their aims are to facilitate code safety, security, portability and reliability in the context of embedded systems. MISRA has evolved as a widely accepted model for best practices by leading developers in sectors including automotive, aerospace, telecom, medical devices, defence, railway, and others.
 
-Many companies that develop software in the safety domain have this standard or similar quality standards as an integral part of their quality management process to provide assurance during safety assessment by internal or external audits. An integral part can in some cases mean it must be complied with. 
+Many companies that develop software in the safety domain have this standard or similar quality standards as an integral part of their quality management process to provide assurance during safety assessment by internal or external audits. An integral part can in some cases mean it must be complied with.
 
 MISRA rule parsing is available through various code quality management tools. The MISRA standard document lists the rules or requirements with context and examples. The document can be purchased from MISRA directly. Tools implement the standard and parse source code to produce a report. A MISRA qualification tool would produce a typical report such as that shown below.
 
@@ -45,6 +45,10 @@ The types used for an object, a function return type, or a function parameter sh
 dtp Recommended Tasks to Accomplish Today : 50
 /Analysis/../llvm/lib/Analysis/AliasAnalysis.cpp
 102: A tag name 'Result' is reused
+
+Code quality standards like MISRA 'C' 2012 or CERT coding standards can also be used to support functional safety standards like ISO 26262 in order to provide evidence that the code is operating as expected in all circumstances because of either implementation or random errors.
+
+Unlike code quality standards functional safety standards are aimed at the program binary (as a result of a program being compiled) up to the system architectural behavioural level.
 
 It is recommended that a Khrono SC API follows the MISRA
 C or MISRA pass:[C++] guidelines as it is can be assumed that the development of an SC API implementation would also follow MISRA guidelines and by not providing a MISRA compliant SC API could mean the standard is not adopted without further modification.
