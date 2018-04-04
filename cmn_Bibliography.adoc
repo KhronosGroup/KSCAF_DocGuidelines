@@ -1,0 +1,33 @@
+// (C) Copyright 2014-2018 The Khronos Group Inc. All Rights Reserved.
+// Khrono Group Safety Critical API Development SCAP
+// document
+//
+// Text format: asciidoc 8.6.9
+// Editor:      Asciidoc Book Editor
+//
+// Description: Bibliography
+
+:Author: Julien Olivain
+:Author Initials: JO
+:Revision: 0.01
+
+
+==== General functional safety
+
+Chris Hobbs, *Embedded Software Development for Safety-Critical Systems*, CRC Press, 2015
+
+David J. Smith and Kenneth G. L. Simpson, *The Safety Critical Systems Handbook*, Butterworth Heinemann, 2016
+
+
+==== Coding guildelines
+
+Les Hatton, *Safer C: Developing Software for High-Integrity and Safety-Critical Systems*, McGraw-Hill, 1995
+
+*MISRA C:2012* Guildelines for the use of the C language in critical systems*, 2013
+
+*MISRA C++:2008 Guildelines for the use of the C++ language in critical systems*, 2008
+
+Robert C. Seacord, *The CERT C Coding Standard Second Edition*, Addison-Wesley, 2014
+
+Robert C. Seacord, *Secure Coding in C and C++ Second Edition*, Addison-Wesley, 2013
+
