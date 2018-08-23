@@ -41,11 +41,11 @@ include::GuidelinesCoverPage.adoc[]
 :author: Illya_Rudkin_(spec_editor)
 :authorinitials: IOR
 :homepage: http://www.khronos.org
-:docname: SCAPGuidelines
+:docname: KSCAFGuidelines
 :doc_date: {docdate}
-:doctitle: Khronos SCAP Guidelines v{doc_version}
+:doctitle: KSCAF Guidelines v{doc_version}
 :doc_revision: 1
-:doc_version: 0.051
+:doc_version: 0.052
 :toc-placement: manual
 :toclevels: 2
 :toc:

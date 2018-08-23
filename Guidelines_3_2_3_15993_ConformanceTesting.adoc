@@ -27,4 +27,4 @@ It is not the intent for Khronos conformance tests for Safety Critical technolog
 Please read the
 <<Guideline_2_1_SCAPRiderStatement,guideline statement>>.
 
-Further reading: SCAP Requirements: Fully testable.
+Further reading: KSCAF Requirements: Fully testable.
