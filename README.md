@@ -1,4 +1,4 @@
-# Khronos Khronos Safety Critical Advisory Forum Guidelines
+# Khronos(R) Safety Critical Advisory Forum Guidelines
 Working group’s requirements for developing a safety critical API specification.
 
 ### Document layout information for the Requirements document

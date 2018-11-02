@@ -1,4 +1,4 @@
-// (C) Copyright 2014-2018 The Khronos Group Inc. All Rights Reserved.
+// (C) Copyright 2014-2018 The Khronos(R) Group Inc. All Rights Reserved.
 // Khrono Group Safety Critical API Development SCAP
 // document
 //
@@ -45,7 +45,7 @@ include::GuidelinesCoverPage.adoc[]
 :doc_date: {docdate}
 :doctitle: KSCAF Guidelines v{doc_version}
 :doc_revision: 1
-:doc_version: 0.052
+:doc_version: 0.053
 :toc-placement: manual
 :toclevels: 2
 :toc:
