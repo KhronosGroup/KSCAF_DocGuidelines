@@ -1,0 +1,70 @@
+// (C) Copyright 2014-2018 The Khronos Group Inc. All Rights Reserved.
+// Khronos Group Safety Critical API Development SCAP
+// document
+//
+// Text format: asciidoc 8.6.9
+// Editor:      Asciidoc Book Editor
+//
+// Description: Guidelines 3.2.16 Guidelines Git #32 #33 and #34
+
+:Author: Bogdan Naodovic
+:Author Initials: BN
+:Revision: 0.06
+
+// Hyperlink anchor, the ID matches those in
+// 3_1_GuidelinesList.adoc
+[[gh32]]
+
+ifdef::basebackend-docbook[]
+=== Implementation details
+endif::[]
+ifdef::basebackend-html[]
+=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. Implementation details
+endif::[]
+
+// Automatic sub-section numbering, use {counter:subsection-id}
+:subsection-id: 0
+
+==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. A SC profile should discuss API-implementation details as much as needed to ensure safety
+
+*Rationale:* Safety environment places additional requirements on the implementation of an API, when compared to non-safety environment. If the impact of these additional requirements is not taken into account and discussed as needed in the SC profile, the profile may inadvertently define functions, data structures or procedures which are infeasible to implement in the safety environment.
+
+*Example:* A function ‘void* f()’ is defined by the SC profile, such that it allocates as many as needed objects of some size. Since the safety environment typically requires minimal memory allocation, this function is almost in contradiction with the requirement. To overcome this contradiction, a discussion section in the SC profile could either be: +
+[indent=2]
+1. Specify an alternative version of function, ‘void* f(int i),’ which returns one of only N objects, as specified by parameter ‘i,’ or +
+2. Specify that the function may return a null pointer after the API implementation has transitioned from the initialization stage to the safety operating mode stage. +
+//----------------------------------------------------------------
+
+==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. A SC profile should discuss API-implementation dependence on OS mechanisms
+
+*Rationale:* Some API functions may be feasible to implement only if an OS provides certain mechanisms; therefore, it would be very beneficial to discuss in the API specification about minimum requirements for the OS, since many safety-critical OS provide only minimal set of mechanisms.
+
+*Example:* <<ARINC 653 Time Partitioning & Hard Time Partitioning>> example in section 3.2.1
+//----------------------------------------------------------------
+
+==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. A SC profile should discuss the impact of functions with a broad-range of parameters on the testability of the implementation of the API
+
+*Rationale:* Implementations in the safety environment have a requirement for a significantly more detailed and exhaustive testing than in the non-safety environment. If an API function has a parameter with a broad range of possible values, then it may be infeasible to implement all the testing specified by various safety standards to which the API implementation may need to adhere to. If no alternatives for the function exist with a narrow-range of parameters, then there should be reasons listed in a discussion section why no alternative exists. This section can then be referenced in safety reports of the API implementations.
+
+*Example:* [TODO]
+//----------------------------------------------------------------
+
+==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. A SC profile should discuss the impact of functions with parameters for which allowed and disallowed sets of values are hard to determine on testability of the implementation of the API
+
+*Rationale:* Implementations in the safety environment have a requirement for a significantly more detailed and exhaustive testing than in the non-safety environment. If an API function has a parameter for which there are allowed and disallowed sets of values which are hard to determine, then it may be infeasible to implement all the testing specified by various safety standards to which the API implementation may need to adhere to. If no alternatives for the function exist with a  parameter for which the mentioned sets can be feasibly determined, then there should be reasons listed in a discussion section why no alternative exists. This section can then be referenced in safety reports of the API implementations.
+
+*Example:* [TODO]
+//----------------------------------------------------------------
+
+==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. A SC profile should discuss impact of functions with broad-range parameter or parameters on testability of user code calling those functions.
+
+*Rationale:* A typical requirement for development in the safety environment is for parameter values passed to library functions to be tested for correctness. If there is user code calling an API function with a broad-range parameter, then it may be infeasible to implement all the testing specified by various safety standards to which the user code may need to adhere to. If no alternatives for the function exist with narrow-range parameters, then there should be reasons listed in a discussion section why no alternative exists. This section could then be referenced in safety report which encompasses the mentioned code.
+
+*Example:* [TODO]
+//----------------------------------------------------------------
+
+==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. A SC profile should the discuss impact of functions with parameter(s) that allow and disallow sets of values that are hard to be verified by the users' testing applications.
+
+*Rationale:* A typical requirement for development in the safety environment is for parameter values passed to library functions to be tested for correctness. If there is user code calling an API function with a parameter for which it is allowed and disallowed sets of values which are hard to determine, then it may be infeasible to implement all the testing specified by various safety standards to which the code may need to adhere to. If no alternatives for the function exist with the parameter for which the mentioned sets can be feasibly determined, then there should be reasons listed in a discussion section why no alternative exists. This section can then be referenced in safety report which encompasses the mentioned code.
+
+*Example:* [TODO]
