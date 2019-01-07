@@ -16,16 +16,16 @@
 [[gh32]]
 
 ifdef::basebackend-docbook[]
-=== Implementation details
+=== SC API-implementation details
 endif::[]
 ifdef::basebackend-html[]
-=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. API-implementation considerations
+=== {chapter-id}.{chapter-sub-id}.{counter:section-id}. SC API-implementation considerations
 endif::[]
 
 // Automatic sub-section numbering, use {counter:subsection-id}
 :subsection-id: 0
 
-==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. <<The SC API,The SC version of an API>> should discuss API-implementation details as much as needed to ensure safety
+==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. The SC version of an API should discuss API-implementation details as much as needed to ensure safety
 
 *Rationale:* Safety environment places additional requirements on the implementation of an API, when compared to non-safety environment. If the impact of these additional requirements is not taken into account and discussed as needed in the SC version of the API, the SC version may inadvertently define functions, data structures or procedures which are infeasible to implement in the safety environment.
 

@@ -37,6 +37,6 @@ List of the changes that have occurred between one or more releases.
 |0.051    | 2018-03-29                   | Front cover replace 'Safety Critical Advisory Panel' (SCAP) with 'Khronos Safety Critical Advisory Forum'
 |0.052    | 2018-08-23                   | Find and replace 'Safety Critical Advisory Panel', SCAP with 'Khronos Safety Critical Advisory Forum' or KSCAF
 |0.053    | 2018-11-02                   | Insert Khronos registration mark (R)
-|0.06     | 2018-11-07                   | New content 'Implementation details'
+|0.06     | 2018-11-07                   | New content 'SC API-implementation details'
 //|x.x      | [red yellow-background]#???# |
 |=============================

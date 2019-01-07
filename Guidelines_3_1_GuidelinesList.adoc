@@ -48,5 +48,5 @@ The following is a list of all the KSCAF guidelines when considering designing a
 |<<gh29,{counter:section-id}>>    | Development out of context
 |<<gh30,{counter:section-id}>>    | Provide initialisation and shutdown functions
 |<<gh31,{counter:section-id}>>    | Perform a hazard risk analysis and create a safety goals report
-|<<gh32,{counter:section-id}>>    | Implementation details
+|<<gh32,{counter:section-id}>>    | SC API-implementation details
 |=============================
