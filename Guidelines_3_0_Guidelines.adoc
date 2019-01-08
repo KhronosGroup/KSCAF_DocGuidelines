@@ -70,4 +70,4 @@ include::Guidelines_3_2_19_30_ProvideInitAndShutdown.adoc[]
 
 include::Guidelines_3_2_20_31_FirstTaskPerformHARA.adoc[]
 
-include::Guidelines_3_2_21_multi_SCImplementationDetails.adoc[]
+include::Guidelines_3_2_21_multi_SCAPI-implementationDetails.adoc[]
