@@ -45,7 +45,7 @@ include::GuidelinesCoverPage.adoc[]
 :doc_date: {docdate}
 :doctitle: KSCAF Guidelines v{doc_version}
 :doc_revision: 1
-:doc_version: 0.055
+:doc_version: 0.056
 :toc-placement: manual
 :toclevels: 2
 :toc:
