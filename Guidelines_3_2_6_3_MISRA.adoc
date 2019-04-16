@@ -9,7 +9,7 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.04
+:Revision: 0.055
 
 // Hyperlink anchor, the ID matches those in
 // 3_1_GuidelinesList.adoc
@@ -48,7 +48,7 @@ dtp Recommended Tasks to Accomplish Today : 50
 
 Code quality standards like MISRA 'C' 2012 or CERT coding standards can also be used to support functional safety standards like ISO 26262 in order to provide evidence that the code is operating as expected in all circumstances because of either implementation or random errors.
 
-Unlike code quality standards functional safety standards are aimed at the program binary (as a result of a program being compiled) up to the system architectural behavioural level.
+Unlike code quality standards functional safety standards are aimed at the program binary (as a result of a program being compiled) up the way up to the system architectural behavioural level. This can include additionally 3rd party tools, IDEs, requirements and design traceabilty and validation and verification of the item (the complete system in a vehicle). 
 
 It is recommended that a Khrono SC API follows the MISRA
 C or MISRA pass:[C++] guidelines as it is can be assumed that the development of an SC API implementation would also follow MISRA guidelines and by not providing a MISRA compliant SC API could mean the standard is not adopted without further modification.

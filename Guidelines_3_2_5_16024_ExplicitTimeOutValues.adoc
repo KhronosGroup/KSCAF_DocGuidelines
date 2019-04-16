@@ -9,7 +9,7 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.04
+:Revision: 0.055
 
 // Hyperlink anchor, the ID matches those in
 // 3_1_GuidelinesList.adoc
@@ -26,4 +26,4 @@ Similar to being able to accurately control memory usage on an embedded system, 
 
 SC API implementations must also provide similar guarantees about how long a single call will take based on the current state. However there exist some APIs calls which cause the system to wait for an external event or state change to occur. These APIs should provide the application the ability to set a maximum time to wait for the occurrence of the event or state change. This allows the application to minimize Worst Case Execution Times by being programmed to handle asynchronous execution of long waits, instead of stalling the program until the event or state change occur.
 
-There exist many ways to set such a maximum wait time. The POSIX family of functions +*_timedwait+ uses a parameter to the actual function call to accomplish this. , adding timeout parameters would change the function signature of well established functions may not be desired. As an alternative to adding a specific timeout parameter to the function call the timeout value could be set using a standard state setting function. An example in OpenGL may be to use +glSetInteger+. In this case the timeout value is set before the function is called and stored for when the function is called. In Vulkan the timeout value may be passed to the function via an extension structure via the +pNext+ parameter. These are just some examples of how this might be solved, but it is left up to the API designers to determine the best way to accomplish this for the particular API.
+There exist many ways to set such a maximum wait time. The POSIX family of functions +*_timedwait+ uses a parameter to the actual function call to accomplish this, adding timeout parameters would change the function signature of well established functions may not be desired. As an alternative to adding a specific timeout parameter to the function call the timeout value could be set using a standard state setting function. An example in OpenGL may be to use +glSetInteger+. In this case the timeout value is set before the function is called and stored for when the function is called. In Vulkan the timeout value may be passed to the function via an extension structure via the +pNext+ parameter. These are just some examples of how this might be solved, but it is left up to the API designers to determine the best way to accomplish this for the particular API.

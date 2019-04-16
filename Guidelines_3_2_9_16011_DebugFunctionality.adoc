@@ -9,7 +9,7 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.04
+:Revision: 0.055
 
 // Hyperlink anchor, the ID matches those in
 // 3_1_GuidelinesList.adoc
@@ -22,4 +22,6 @@ ifdef::basebackend-html[]
 === {chapter-id}.{chapter-sub-id}.{counter:section-id}. Debug functionality
 endif::[]
 
-Debug functionality which is not used during final run-time should be moved to an extension so that it does not need to go the certification process for the final product release.
+In the safety critical domain it is recognised as good practice and some cases a requirement the code which is not executed at all during its lifetime should be removed. This implies for debug functionality which is not used during final run-time should be moved to an extension so that it does not need to go through the safety certification process for the final product release.
+
+If the debug functionality is used to determine the safety requirements are being met the code used to achieve the debug functionality should still be put through the same safety rigour as the code that remains in the final binary.

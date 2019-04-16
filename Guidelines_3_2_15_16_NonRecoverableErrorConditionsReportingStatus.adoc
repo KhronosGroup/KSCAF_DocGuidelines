@@ -20,7 +20,7 @@ ifdef::basebackend-docbook[]
 endif::[]
 ifdef::basebackend-html[]
 === {chapter-id}.{chapter-sub-id}.{counter:section-id}. Non recoverable error conditions and reporting status
-ndif::[]
+endif::[]
 
 Also see:
 
