@@ -29,20 +29,18 @@ endif::[]
 
 *Rationale:* Safety environment places additional requirements on the implementation of an API, when compared to non-safety environment. If the impact of these additional requirements is not taken into account and discussed as needed in the SC version of the API, the SC version may inadvertently define functions, data structures or procedures which are infeasible to implement in the safety environment.
 
-*Example:* Function `void* f()` is declared in the SC version of the API, such that each time it is called, it allocates a new object and returns pointer to it. Since safety-critical execution typically requires minimal memory allocation, such a function is all but in contradiction with the requirement. To overcome this contradiction, a discussion section in the SC profile could:
+*Example:* Function `Buffer* get_buffer()` is declared in the SC version of the API, such that each time it is called, it allocates a new `Buffer` object and returns pointer to it. Since safety-critical execution typically has very strict requirements for memory allocation, a discussion section in the SC profile could:
 [indent=2]
-1. Limit the number of objects which can be allocated to value _N_ and specify an alternative version of the function, such as `void* f(int i)`, which returns one of those _N_ objects, as specified by parameter `i`. This way, the implementation can employ a strategy that will be less in contradiction to safety requirements, such as allocating all objects in advance, or allocating the object as needed, but in a special section of memory designated exclusively for allocations by the mentioned function.
-2. Limit the availability of new-object allocation to only certain stages of the system operation, such as pre-safety initialization stage, and specify that the function may return null pointer when the system is not in one of those stages, to indicate that the allocation has not been and cannot be performed. With such a limitation, there would also have to be a function specified for querying the current stage of the system, such as `int state()`, in order to be able to interpret results from calls to the mentioned function `f`. An example of how these two functions could be used is shown below.
+1. Limit the number of objects, which can be allocated, to value _N_, and specify an alternative version of the function, such as `Buffer* get_buffer(uint16_t i)`, which returns object with index `i`, where `i` can take a value between 0 and _(N-1)_. This way, the implementation can employ a strategy such as allocating all objects before the function is called the first time, or dynamically allocating an object whenever the function is called, but allocating it in a special section of memory designated exclusively for this purpose.
+2. Limit the availability of new-object allocation to only certain modes of the system operation, such as non-safe initialization mode, and specify that the function may return `nullptr` when the system is not in one of those modes, to indicate that the allocation has not been, and cannot be, performed. With such a limitation, there would also have to be a function specified for querying the current mode of the system, such as `Mode get_mode()`, in order to be able to interpret results from calls to the mentioned function `get_buffer`, where `Mode` can be defined as `enum class Mode { non_safe, safe }`. An example of how these two functions could be used is shown below.
 ----
-void* object = f();
-if (object == NULL) {
-    if (stage() == PRE_SAFETY_INITIALIZATION) {
+Buffer* input = get_buffer();
+if (input == nullptr) {
+    if (get_mode() == Mode::non_safe) {
         /* Handle being out of memory */
-    } else if (stage() == SAFETY) {
-        /* Handle being unable to allocate new objects */
-    } else {
-        /* Handle general problem with allocation */
-    }
+    } else if (get_mode()  == Mode::safe) {
+        /* Handle being restricted from allocating new objects */
+    };
 }
 ----
 
@@ -52,26 +50,59 @@ if (object == NULL) {
 
 *Example:* <<ARINC 653 Time Partitioning & Hard Time Partitioning>> example in section 3.2.1
 
-==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. The SC version of an API should discuss the impact of functions with a broad-range of parameters on the testability of the implementation of the API
+==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. The SC version of an API should discuss the impact of functions with broad-range parameters values on the testability of the implementation of the API
 
-*Rationale:* Implementations in the safety environment have a requirement for a significantly more detailed and exhaustive testing than in the non-safety environment. If an API function has a parameter with a broad range of possible values, then it may be infeasible to implement all the testing specified by various safety standards to which the API implementation may need to adhere to. If no alternatives for the function exist with a narrow-range of parameters, then there should be reasons listed in a discussion section why no alternative exists. This section can then be referenced in safety reports of the API implementations.
+*Rationale:* Safety environment places additional requirements on testing of the implementation of an API, when compared to non-safety environment. These additional requirements typically ask for significantly more detailed and exhaustive testing than in the non-safety environment. If an API function has a parameter with a broad range of possible values, then it may be infeasible to implement the mentioned testing. If no narrow-range parameter alternatives exist, then the reasons should be listed in a discussion section. This section can then be referenced in safety report of the API implementation.
 
-*Example:* [TODO]
+*Example:* Function `void initialize_display(uint64_t handle)` is defined in SC version of the API, such that it initializes resources needed by a particular display driver, in a system consisting of several display drivers. Since it is infeasible to determine which values of `handle` are allowed, a discussion section in the SC profile should state that:
 
-==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. The SC version of an API should discuss the impact of functions with parameters for which allowed and disallowed sets of values are hard to determine on testability of the implementation of the API
+* alternatives for the function are not possible in the API specification, since it cannot be known which drivers will be part of the system at the time of creation of the specification,
+* the implementation is free to define finite set of allowed values for the `handle`.
+This would simplify and improve testing by significantly reducing the number of test cases needed to be executed.
 
-*Rationale:* Implementations in the safety environment have a requirement for a significantly more detailed and exhaustive testing than in the non-safety environment. If an API function has a parameter for which there are allowed and disallowed sets of values which are hard to determine, then it may be infeasible to implement all the testing specified by various safety standards to which the API implementation may need to adhere to. If no alternatives for the function exist with a  parameter for which the mentioned sets can be feasibly determined, then there should be reasons listed in a discussion section why no alternative exists. This section can then be referenced in safety reports of the API implementations.
+==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. The SC version of an API should discuss the impact of functions with parameters, for which allowed and disallowed sets of values are complex to determine, on testability of the implementation of the API
 
-*Example:* [TODO]
+*Rationale:* Safety environment places additional requirements on testing of the implementation of an API, when compared to non-safety environment. These additional requirements typically ask for significantly more detailed and exhaustive testing than in the non-safety environment. If an API function has a parameter, for which allowed and disallowed sets of values are complex to determine, then it may be infeasible to implement the mentioned testing. If no simpler parameter alternatives exist, then the reasons should be listed in a discussion section. This section can then be referenced in safety report of the API implementation.
 
-==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. The SC version of an API should discuss impact of functions with broad-range parameter or parameters on testability of user code calling those functions.
+*Example:* Function `void get_driver_handles(void* handles, uint16_t max_num)` is defined in SC version of the API, such that it writes an array of handles in memory starting from address `handles`. No more than `max-num` elements are written in memory. Since it is complex to determine which values of `handles` are allowed, a discussion section in the SC profile could provide two functions as alternative to the mentioned `get_driver_handles`: 
 
-*Rationale:* A typical requirement for development in the safety environment is for parameter values passed to library functions to be tested for correctness. If there is user code calling an API function with a broad-range parameter, then it may be infeasible to implement all the testing specified by various safety standards to which the user code may need to adhere to. If no alternatives for the function exist with narrow-range parameters, then there should be reasons listed in a discussion section why no alternative exists. This section could then be referenced in safety report which encompasses the mentioned code.
+* `uint16_t get_num_drivers()`,
+* `uint64_t get_driver_handle(uint16_t i)`,
+such that the former function returns number of drivers in the system, and the latter returns the handle from the driver with index `i`, where `i` can take a value between 0 and `get_num_drivers()`-result. Implementation of the alternative would simplify and improve testing by significantly reducing the number of test cases needed to be executed.
 
-*Example:* [TODO]
+==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. The SC version of an API should discuss impact of functions with broad-range parameters on testability of user code calling those functions
 
-==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. The SC version of an API should the discuss impact of functions with parameter(s) that allow and disallow sets of values that are hard to be verified by the users' testing applications.
+*Rationale:* Safety environment places additional requirements on testing of the implementation of an API, when compared to non-safety environment. These additional requirements typically ask for parameter values passed to library functions to be tested for correctness. If there is user code calling an API function with a broad-range parameter, then it may be infeasible to implement the mentioned testing. If no narrow-range parameter alternatives exist, then the reasons should be listed in a discussion section. This section can then be referenced in safety report of the user code.
 
-*Rationale:* A typical requirement for development in the safety environment is for parameter values passed to library functions to be tested for correctness. If there is user code calling an API function with a parameter for which it is allowed and disallowed sets of values which are hard to determine, then it may be infeasible to implement all the testing specified by various safety standards to which the code may need to adhere to. If no alternatives for the function exist with the parameter for which the mentioned sets can be feasibly determined, then there should be reasons listed in a discussion section why no alternative exists. This section can then be referenced in safety report which encompasses the mentioned code.
+*Example:* See example [...]. In addition, the discussion section in the SC profile could suggest that the user code define function `void initialize_display(Driver_handle handle)`, where type of `handle` is `enum class Driver_handle : uint16_t { Driver_a, Driver_b}`, and `Driver_a` and `Driver_b` are the only allowed values for the parameter. Simple implementation of this function is shown below. This would simplify and improve testing by significantly reducing the number of test cases needed to be executed.
 
-*Example:* [TODO]
+----
+void initialize_display(Driver_handle handle)
+{
+    initialize_display(static_cast<uint16_t>(handle));
+}
+----
+
+==== {chapter-id}.{chapter-sub-id}.{section-id}.{counter:subsection-id}. The SC version of an API should discuss impact of functions with parameters, for which allowed and disallowed sets of values are complex to determine, on testability of user code calling those functions.
+
+*Rationale:* Safety environment places additional requirements on testing of the implementation of an API, when compared to non-safety environment. These additional requirements typically ask for parameter values passed to library functions to be tested for correctness. If there is user code calling an API function with parameters, for which allowed and disallowed sets of values are complex to determine, then it may be infeasible to implement the mentioned testing. If no simpler parameter alternatives exist, then the reasons should be listed in a discussion section. This section can then be referenced in safety report of the user code.
+
+*Example:* Function `void get_driver_handles(void* handles, uint16_t max_num)` is defined in SC version of the API, such that it writes an array of handles in memory starting from address `handles`. No more than `max-num` elements are written in memory. Since it is complex to determine which values of `handles` are allowed, a discussion section in the SC profile could suggest that the user code define function `std::vector<uint64_t> get_driver_handles()`. Simple implementaion of this function is shown below. This would simplify and improve testing by significantly reducing the number of test cases needed to be executed.
+
+----
+const uint16_t N = <maximum-value>;
+std::vector<uint64_t> get_driver_handles()
+{
+    std::vetor<uint64_t> result;
+    static uint64_t* handles = nullptr;
+    if (handles == nullptr) {
+        // To do: free 'handles'
+        handles = new uint64_t[N];
+        get_driver_handles(handles, N);
+    }
+    for (uint16_t i = 0; (i < N) && (*(handles + i) != 0); i++) {
+        result.push_back(*(handles + i));
+    }
+    return result;
+}
+----
