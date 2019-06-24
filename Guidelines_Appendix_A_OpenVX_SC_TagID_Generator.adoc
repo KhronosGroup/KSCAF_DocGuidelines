@@ -1,0 +1,72 @@
+// (C) Copyright 2014-2019 The Khronos Group Inc. All Rights Reserved.
+// Khronos Group Safety Critical API Development SCAP
+// document
+//
+// Text format: asciidoc 8.6.9
+// Editor:      Atom
+//
+// Description: Guidelines Appendix A OpenVX SC Tag ID Generator method and tools
+
+:Author: Illya Rudkin (spec editor)
+:Author Initials: IOR
+:Revision: 0.057
+
+// Hyperlink anchor, the ID matches those in
+// 3_1_GuidelinesList.adoc
+[[appendix_a]]
+
+=== Appendix {counter:appendix-id}: OpenVX SC Tag ID Generator
+
+The OpenVX WG present their methods and tools that they been using in OpenVX WG to help with safety-critical spec, Radha prepared a document (see below) that can be shared with other Khronos WGs. All the documentation within the python script as a -help option. Khronos members can access the python script from gitlab
+repository: https://gitlab.khronos.org/openvx/api-docs/blob/master/docs/config/spec-tags.py.
+
+// Appendix sub-sections numbered using roman numbering
+==== Specification in AsciiDoctor
+
+All the implementation requirements imposed by a specification can be tagged using unique identifiers of the form \`[\*REQ-#*]`, where # is a number. These can be used to help maintain requirement traceability throughout the implementation development process to assure that they are documented and verified.
+The requirements which persist across specification versions will be retained with the same requirement identifier. New specification versions may add or remove requirements, therefore the tags in a specification may not be in numerical order.
+To insert a requirement tag into the specification, insert below text marker into text without double-quotes (don't forget to add space before the tag):
+
+" `[\*REQ*]`"
+
+This marks a tag without numeric ID. Use this script to automatically generate a unique requirement tag ID of the form \`[\*REQ-#*]` to look like [REQ-1234] anywhere in the document, where # is a number. The generated requirement tag IDs can be cross-referred using REQ-# name, where # is the unique number. For example, the requirement ID [REQ-1234] in a specification can be cross-referenced using "spec.html#REQ-1234" in the specification HTML.
+
+This scripts keeps track of all unique numbers already present in the document before generating unique numbers for new requirement tags. The unique requirement tag numbers will start from 1 and will be increment from the last unique number generated. The script keeps track of the last unique number by appending the document with "//[\*CNT-#*]" marker at the end, where # is the last unique number.
+The script also takes number of digits in the generated requirement tag as an argument, with 4 digits as default when not specified.
+
+*Usage*
+
+`+% python spec-tags.py [-help] [-digits 4|n] check|update|list|remove|reset spec.adoc [output.adoc]+`
+
++Options:* +
+[cols="2", cols="2,10", width="90%"]
+|===
+|`-digits n`
+|Number of digits in generated requirement tags (default 4)
+
+|`-help`
+|Print this message
+|===
+
+*Commands:* +
+[cols="2", cols="2,10", width="90%"]
+|===
+|`check`
+|Check the consistency of requirement tags in the document
+
+|`update`
+|Replace `[\*REQ*]` tags in the document with `[\*REQ-#*]` where # is a unique number
+
+|`list`
+|Show list of unique requirement IDs and corresponding line number in the ASCIIDOCTOR specification document. Section heading can be extracted from generated HTML output by specifying HTML file as optional parameter after the input ASCIIDOCTOR file.
+
+|`remove`
+|Remove all requirement tags from the specification document to support specification build without any requirement tags
+
+|`reset`
+|Replace all uniquely identified requirement tags with `[\*REQ*]` text. This is a feature to debug this script
+|===
+
+*Example*
+
+`% python spec-tags.py update OpenVX_Specification.adoc`

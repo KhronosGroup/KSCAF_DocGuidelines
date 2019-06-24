@@ -40,5 +40,6 @@ List of the changes that have occurred between one or more releases.
 |0.054    | 2018-11-07                   | Various grammatical and sentence structure changes or fixes
 |0.055    | 2019-04-16                   | Apply Etem Deniz recommendations for fixes or changes
 |0.056    | 2019-04-16                   | Update the Khronos copyright year from '18 to '19
+|0.057    | 2019-06-24                   | Add new appendix for OpenVX SC Tag ID Generator method and tools
 //|x.x      | [red yellow-background]#???# |
 |=============================
