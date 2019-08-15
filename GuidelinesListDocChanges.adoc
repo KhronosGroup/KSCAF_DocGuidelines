@@ -1,9 +1,9 @@
-// (C) Copyright 2014-2018 The Khronos Group Inc. All Rights Reserved.
+// (C) Copyright 2014-2019 The Khronos Group Inc. All Rights Reserved.
 // Khronos Group Safety Critical API Development SCAP
 // document
 //
 // Text format: asciidoc 8.6.9
-// Editor:      Asciidoc Book Editor
+// Editor:      Atom
 //
 // Description: Guidelines document change history
 //
@@ -12,7 +12,7 @@
 
 :Author: Illya Rudkin (spec editor)
 :Author Initials: IOR
-:Revision: 0.056
+:Revision: 0.058
 
 _Version: {doc_version}_  +
 _Document Revision: {doc_revision}_ +
@@ -41,5 +41,6 @@ List of the changes that have occurred between one or more releases.
 |0.055    | 2019-04-16                   | Apply Etem Deniz recommendations for fixes or changes
 |0.056    | 2019-04-16                   | Update the Khronos copyright year from '18 to '19
 |0.057    | 2019-06-24                   | Add new appendix for OpenVX SC Tag ID Generator method and tools
+|0.058    | 2019-08-15                   | Change the Khronos copyright page to have the Creative Commons CC BY-SA text 
 //|x.x      | [red yellow-background]#???# |
 |=============================
